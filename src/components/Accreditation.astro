@@ -1,0 +1,15 @@
+---
+const {imageAuthor, imageAuthorLink, imageSource, imageSourceLink} = Astro.props
+---
+
+
+<small>
+    <span>Photo by </span><a href={imageAuthorLink}>{imageAuthor}</a>
+    <span>on </span><a href={imageSourceLink}>{imageSource}</a>
+</small>
+
+
+<style>
+
+
+</style>
