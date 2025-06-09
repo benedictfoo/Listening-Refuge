@@ -81,9 +81,10 @@ const {
         {heroImage && (
                 <Image width={1020} height={510} src={heroImage} alt=""/>
         )}
-        <Accreditation heroImage={heroImage} imageAuthor={imageAuthor}
-                       imageAuthorLink={imageAuthorLink} imageSource={imageSource}
-                       imageSourceLink={imageSourceLink} alt=""/>
+        {imageSource && imageSourceLink && imageAuthor && imageAuthorLink &&
+                <Accreditation heroImage={heroImage} imageAuthor={imageAuthor}
+                               imageAuthorLink={imageAuthorLink} imageSource={imageSource}
+                               imageSourceLink={imageSourceLink} alt=""/>}
         <div class="prose">
             <div class="title">
                 <div class="date">

@@ -117,7 +117,7 @@ const posts = (await getCollection('blog')).sort(
 
                             </a>
 
-                            {post.data.imageAuthor && (
+                            {post.data.imageAuthor && post.data.imageAuthorLink && post.data.imageSource && post.data.imageSourceLink && (
                                     <Accreditation
                                             imageAuthor={post.data.imageAuthor}
                                             imageAuthorLink={post.data.imageAuthorLink}
