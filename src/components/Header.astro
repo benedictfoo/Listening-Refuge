@@ -4,14 +4,14 @@ import {SITE_TITLE} from '../consts';
 ---
 
 <header>
-    <nav class="flex flex-wrap bg-green-300 items-center justify-between gap-4 text-lg  px-2 py-4 sm:text-2xl sm:p-10">
-        <h2><a href="/">{SITE_TITLE}</a></h2>
-        <div class="flex gap-2 sm:justify-center sm:gap-6 ">
+    <nav class="flex flex-wrap bg-green-300 items-center justify-between sm:justify-center gap-4 text-lg  px-2 py-4 sm:text-2xl sm:p-10">
+        <h2 class=""><a href="/">{SITE_TITLE}</a></h2>
+        <div class="sm:grow flex gap-2 sm:justify-center sm:gap-6 ">
             <HeaderLink href="/">Home</HeaderLink>
             <HeaderLink href="/blog">Blog</HeaderLink>
             <HeaderLink href="/about">About</HeaderLink>
         </div>
-        <div class="flex gap-2 sm:gap-6">
+        <div class=" flex gap-2 sm:gap-6">
             <!--<a href="https://m.webtoo.ls/@astro" target="_blank">-->
             <!--	<span class="sr-only">Follow Astro on Mastodon</span>-->
             <!--	<svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32"-->
