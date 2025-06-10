@@ -7,6 +7,7 @@ imageAuthor: "Tomáš Hrubý"
 imageAuthorLink: "https://unsplash.com/@thsmhk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
 imageSource: 'Unsplash'
 imageSourceLink: "https://unsplash.com/photos/a-bird-is-sitting-on-a-branch-of-a-tree-6ummZMrOuCk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+tags: [ "folk" ]
 ---
 
 I had listened to some of Siobhan Miller’s earlier albums before this one—and enjoyed them—so *Bloom* wasn’t my first
