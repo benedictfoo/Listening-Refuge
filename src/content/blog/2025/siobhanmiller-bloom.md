@@ -27,11 +27,10 @@ both a woman’s and a man’s perspective (the man sleeps with her and then lea
 how it shows that our perception of the environment — like the weather — can change depending on our circumstances. I
 liked how the song ends cheerily with the fiddle, making it lighthearted and encouraging acceptance to move on.
 
-I’m not going to review every song, but some exceptional standouts were near the end, like **The Battle of Waterloo**, *
-*Open All Night**, and **Saturday Night**. *The Battle of Waterloo*, with its sustaining cymbals, was a treat to the
+I’m not going to review every song, but some exceptional standouts were near the end, like **The Battle of Waterloo**,
+**Open All Night**, and **Saturday Night**. *The Battle of Waterloo*, with its sustaining cymbals, was a treat to the
 ears, and together with the vocals, it invited a calm and introspective mood. *Open All Night* and *Saturday Night*
-sounded somewhat similar, but they were fun and gave off vibes of being happy, free, and ready to enjoy the night — and
-perhaps get some rest.
+sounded somewhat similar, but they were fun and gave off vibes of being happy, free, and ready to enjoy the night.
 
 The album closes with *Wild Mountain Thyme*, which brings a peaceful and hopeful conclusion, as if leading the listener
 to rest and recharge. But honestly, I was a little sad when the album ended — it was that good!
