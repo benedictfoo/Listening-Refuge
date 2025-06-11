@@ -7,6 +7,7 @@ import FormattedDate from '../components/FormattedDate.astro';
 
 import Accreditation from "../components/Accreditation.astro";
 import {Image} from 'astro:assets'
+import Prose from "../components/Prose.astro";
 
 type Props = CollectionEntry<'blog'>['data'];
 
@@ -88,24 +89,24 @@ const {
                 <Accreditation heroImage={heroImage} imageAuthor={imageAuthor}
                                imageAuthorLink={imageAuthorLink} imageSource={imageSource}
                                imageSourceLink={imageSourceLink} alt=""/>}
-        <div class="p-4 sm:py-6 sm:px-0">
-            <div>
-                <div class="">
-                    <FormattedDate date={pubDate}/>
-                    {
-                        updatedDate && (
-                                    <div class="">
-                                        Last updated on
-                                        <FormattedDate date={updatedDate}/>
-                                    </div>
-                        )
-                    }
-                </div>
-                <h1>{title}</h1>
-                <hr/>
+        <h1>{title}</h1>
+        <Prose class="">
+
+            <div class="">
+                <FormattedDate date={pubDate}/>
+                {
+                    updatedDate && (
+                                <div class="">
+                                    Last updated on
+                                    <FormattedDate date={updatedDate}/>
+                                </div>
+                    )
+                }
             </div>
+            <hr/>
+
             <slot/>
-        </div>
+        </Prose>
     </article>
 </main>
 <Footer/>

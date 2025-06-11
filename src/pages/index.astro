@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import {SITE_TITLE, SITE_DESCRIPTION} from '../consts';
+import Prose from '../components/Prose.astro'
 ---
 
 <!doctype html>
@@ -13,18 +14,21 @@ import {SITE_TITLE, SITE_DESCRIPTION} from '../consts';
 <body class="min-h-screen grid grid-rows-[auto_1fr_auto]">
 <Header/>
 <main class="p-4 sm:p-6 max-w-4xl mx-auto  sm:px-10 md:px-20">
-    <h1 class="text-2xl sm:text-4xl mb-5">Welcome to Tunequil Journal</h1>
-    <p class="mb-3.5">This is a space where I reflect on songs that bring me comfort, clarity, or emotional release.
-        Some
-        calm me down,
-        others lift me up — all of them help me feel more grounded.</p>
-    <p class="mb-3.5">I’m especially drawn to singer-songwriter and folk tunes, but I also dip into jazz, rock, indie
-        pop
-        and also
-        other genres depending
-        on the moment. It's not about genre — it's about the feeling.
-    </p>
-    <p>Thanks for being here. 😊</p>
+    <Prose>
+        <h1>Welcome to Tunequil Journal</h1>
+        <p>This is a space where I reflect on songs that bring me comfort, clarity, or emotional release.
+            Some
+            calm me down,
+            others lift me up — all of them help me feel more grounded.</p>
+        <p>I’m especially drawn to singer-songwriter and folk tunes, but I also dip into jazz, rock,
+            indie
+            pop
+            and also
+            other genres depending
+            on the moment. It's not about genre — it's about the feeling.
+        </p>
+        <p>Thanks for being here. 😊</p>
+    </Prose>
 </main>
 <Footer/>
 </body>
