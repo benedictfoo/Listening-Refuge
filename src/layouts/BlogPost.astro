@@ -76,10 +76,10 @@ const {
 
 <body class="min-h-screen grid grid-rows-[auto_1fr_auto]">
 <Header/>
-<main>
+<main class=" max-w-4xl mx-auto  sm:px-10 md:px-20">
     <article>
         {heroImage && (
-                <div class="hero-image">
+                <div class="">
                     <Image width={1020} height={510} src={heroImage} alt=""/>
 
                 </div>
@@ -88,13 +88,13 @@ const {
                 <Accreditation heroImage={heroImage} imageAuthor={imageAuthor}
                                imageAuthorLink={imageAuthorLink} imageSource={imageSource}
                                imageSourceLink={imageSourceLink} alt=""/>}
-        <div class="prose">
-            <div class="title">
-                <div class="date">
+        <div class="p-4 sm:py-6 sm:px-0">
+            <div>
+                <div class="">
                     <FormattedDate date={pubDate}/>
                     {
                         updatedDate && (
-                                    <div class="last-updated-on">
+                                    <div class="">
                                         Last updated on
                                         <FormattedDate date={updatedDate}/>
                                     </div>
