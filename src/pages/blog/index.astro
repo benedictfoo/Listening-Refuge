@@ -104,35 +104,41 @@ const posts = (await getCollection('blog')).sort(
 </head>
 <body class="min-h-screen grid grid-rows-[auto_1fr_auto]">
 <Header/>
-<main>
+<main class="p-4 mx-auto ">
     <section>
-        <ul>
-            {
-                posts.map((post) => (
-                        <li>
-                            <a href={`/blog/${post.id}/`}>
-                                {post.data.heroImage && (
-                                        <Image width={720} height={360} src={post.data.heroImage} alt=""/>
-                                )}
+        <ul class="grid grid-cols-2 gap-6 ">
+            {posts.map((post, i) => (
+                    <li class={`${i === 0 ? 'col-span-2' : "col-span-1"}`}>
+                        <a href={`/blog/${post.id}/`}>
+                            {post.data.heroImage && (
+                                    <Image
 
-                            </a>
-
-                            {post.data.imageAuthor && post.data.imageAuthorLink && post.data.imageSource && post.data.imageSourceLink && (
-                                    <Accreditation
-                                            imageAuthor={post.data.imageAuthor}
-                                            imageAuthorLink={post.data.imageAuthorLink}
-                                            imageSource={post.data.imageSource}
-                                            imageSourceLink={post.data.imageSourceLink}
+                                            width={i === 0 ? 1000 : 500}
+                                            height={i === 0 ? 500 : 250}
+                                            src={post.data.heroImage}
                                             alt=""
+
                                     />
                             )}
-                            <h4 class="title">{post.data.title}</h4>
-                            <p class="date">
-                                <FormattedDate date={post.data.pubDate}/>
-                            </p>
-                        </li>
-                ))
-            }
+                        </a>
+
+                        {post.data.imageAuthor && post.data.imageAuthorLink && post.data.imageSource && post.data.imageSourceLink && (
+                                <Accreditation
+                                        imageAuthor={post.data.imageAuthor}
+                                        imageAuthorLink={post.data.imageAuthorLink}
+                                        imageSource={post.data.imageSource}
+                                        imageSourceLink={post.data.imageSourceLink}
+                                        alt=""
+                                />
+                        )}
+
+                        <h4 class="title">{post.data.title}</h4>
+                        <p class="date">
+                            <FormattedDate date={post.data.pubDate}/>
+                        </p>
+                    </li>
+            ))}
+
         </ul>
     </section>
 </main>
