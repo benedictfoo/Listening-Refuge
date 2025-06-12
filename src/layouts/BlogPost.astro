@@ -79,17 +79,18 @@ const {
 <Header/>
 <main class=" max-w-4xl mx-auto  sm:px-10 md:px-20">
     <article>
-        {heroImage && (
-                <div class="">
-                    <Image width={1020} height={510} src={heroImage} alt=""/>
 
-                </div>
-        )}
-        {imageSource && imageSourceLink && imageAuthor && imageAuthorLink &&
-                <Accreditation heroImage={heroImage} imageAuthor={imageAuthor}
-                               imageAuthorLink={imageAuthorLink} imageSource={imageSource}
-                               imageSourceLink={imageSourceLink} alt=""/>}
-        <Prose class="">
+        <Prose>
+            {heroImage && (
+                    <div class="">
+                        <Image width={1020} height={510} src={heroImage} alt=""/>
+
+                    </div>
+            )}
+            {imageSource && imageSourceLink && imageAuthor && imageAuthorLink &&
+                    <Accreditation heroImage={heroImage} imageAuthor={imageAuthor}
+                                   imageAuthorLink={imageAuthorLink} imageSource={imageSource}
+                                   imageSourceLink={imageSourceLink} alt=""/>}
             <h1>{title}</h1>
 
             <div class="">
