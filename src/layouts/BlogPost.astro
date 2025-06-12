@@ -20,59 +20,14 @@ const {
     imageAuthorLink,
     imageSource,
     imageSourceLink,
-    heroImage
+    heroImage, tags
 } = Astro.props;
 ---
 
 <html lang="en">
 <head>
     <BaseHead title={title} description={description}/>
-    <!--<style>-->
-    <!--    main {-->
-    <!--        width: calc(100% - 2em);-->
-    <!--        max-width: 100%;-->
-    <!--        margin: 0;-->
-    <!--    }-->
 
-    <!--    .hero-image {-->
-    <!--        width: 100%;-->
-    <!--    }-->
-
-    <!--    .hero-image img {-->
-    <!--        display: block;-->
-    <!--        margin: 0 auto;-->
-    <!--        border-radius: 12px;-->
-    <!--        box-shadow: var(&#45;&#45;box-shadow);-->
-    <!--    }-->
-
-    <!--    .prose {-->
-    <!--        width: 720px;-->
-    <!--        max-width: calc(100% - 2em);-->
-    <!--        margin: auto;-->
-    <!--        padding: 1em;-->
-    <!--        color: rgb(var(&#45;&#45;gray-dark));-->
-    <!--    }-->
-
-    <!--    .title {-->
-    <!--        margin-bottom: 1em;-->
-    <!--        padding: 1em 0;-->
-    <!--        text-align: center;-->
-    <!--        line-height: 1;-->
-    <!--    }-->
-
-    <!--    .title h1 {-->
-    <!--        margin: 0 0 0.5em 0;-->
-    <!--    }-->
-
-    <!--    .date {-->
-    <!--        margin-bottom: 0.5em;-->
-    <!--        color: rgb(var(&#45;&#45;gray));-->
-    <!--    }-->
-
-    <!--    .last-updated-on {-->
-    <!--        font-style: italic;-->
-    <!--    }-->
-    <!--</style>-->
 </head>
 
 <body class="min-h-screen grid grid-rows-[auto_1fr_auto]">
@@ -93,17 +48,24 @@ const {
                                    imageSourceLink={imageSourceLink} alt=""/>}
             <h1>{title}</h1>
 
-            <div class="">
-                <FormattedDate date={pubDate}/>
-                {
-                    updatedDate && (
-                                <div class="">
-                                    Last updated on
-                                    <FormattedDate date={updatedDate}/>
-                                </div>
-                    )
-                }
-            </div>
+
+            <FormattedDate date={pubDate}/>
+            {
+                updatedDate && (
+                            <div class="">
+                                Last updated on
+                                <FormattedDate date={updatedDate}/>
+                            </div>
+                )
+            }
+
+            <p class="flex flex-wrap gap-2">
+                {tags?.map((tag: any) =>
+                        <button class="px-3 py-2 rounded-md bg-emerald-300 border-black"><a class="no-underline"
+                                                                                            href={`/tags/${tag}/`}>{tag}</a>
+                        </button>)}
+            </p>
+
             <hr/>
 
             <slot/>
