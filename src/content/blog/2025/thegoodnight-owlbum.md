@@ -36,7 +36,8 @@ song about choosing presence over illusion.
 *Younger Years* hit me hard. It’s nostalgic without being sappy. The singer remembers a time when life was lived fully,
 courageously—and questions where that feeling went.
 > *\"Do we like it here or do we miss our younger years?\"*  
-> The line is simple, but it says everything. That chorus carries a kind of emotional electricity, a longing not just for
+> The line is simple, but it says everything. That chorus carries a kind of emotional electricity, a longing not just
+> for
 > the past, but for the drive and authenticity they once felt. And in doing so, it points us inward. We all crave those
 > moments of genuine bravery.
 
@@ -75,5 +76,5 @@ It’s not a loud goodbye. It’s a peaceful continuation.
 story of confronting disappointment, holding onto hope, remembering where you came from, and continuing the journey no
 matter what. I love it because it reminds me that courage isn’t about loud declarations. Sometimes, it’s just about
 showing up, being real, and choosing to keep going.
-Let me know if you’d like an image, pull quotes, or additional frontmatter like tags or categories for your Astro blog!
+
 
