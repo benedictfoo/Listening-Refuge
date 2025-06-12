@@ -1,6 +1,6 @@
 ---
 title: "Thoughts on Siobhan Miller's Bloom"
-description: 'Lorem ipsum dolor sit amet'
+description: "Siobhan Miller's Bloom album review"
 pubDate: 'Jun 10 2025'
 heroImage: '../../../assets/tomas-hruby-6ummZMrOuCk-unsplash.jpg'
 imageAuthor: "Tomáš Hrubý"
