@@ -106,7 +106,7 @@ const posts = (await getCollection('blog')).sort(
 <Header/>
 <main class="px-4 mx-auto ">
     <section>
-        <ul class="grid grid-cols-2 gap-6 ">
+        <ul class="grid grid-cols-2 gap-x-6 gap-y-8 ">
             {posts.map((post, i) => (
                     <li class={`${i === 0 ? 'col-span-2' : "col-span-1"}`}>
                         <a href={`/blog/${post.id}/`}>
@@ -122,20 +122,22 @@ const posts = (await getCollection('blog')).sort(
                             )}
                         </a>
 
-                        {post.data.imageAuthor && post.data.imageAuthorLink && post.data.imageSource && post.data.imageSourceLink && (
-                                <Accreditation
-                                        imageAuthor={post.data.imageAuthor}
-                                        imageAuthorLink={post.data.imageAuthorLink}
-                                        imageSource={post.data.imageSource}
-                                        imageSourceLink={post.data.imageSourceLink}
-                                        alt=""
-                                />
-                        )}
+                        <div class="px-1">
+                            {post.data.imageAuthor && post.data.imageAuthorLink && post.data.imageSource && post.data.imageSourceLink && (
+                                    <Accreditation
+                                            imageAuthor={post.data.imageAuthor}
+                                            imageAuthorLink={post.data.imageAuthorLink}
+                                            imageSource={post.data.imageSource}
+                                            imageSourceLink={post.data.imageSourceLink}
+                                            alt=""
+                                    />
+                            )}
 
-                        <h4 class="title">{post.data.title}</h4>
-                        <p class="date">
-                            <FormattedDate date={post.data.pubDate}/>
-                        </p>
+                            <h4 class="text-xl mt-2">{post.data.title}</h4>
+                            <p class="date">
+                                <FormattedDate date={post.data.pubDate}/>
+                            </p>
+                        </div>
                     </li>
             ))}
 
