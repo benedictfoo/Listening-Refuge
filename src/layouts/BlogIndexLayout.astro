@@ -11,19 +11,18 @@ const posts = (await getCollection('blog')).sort(
 ---
 
 <BaseLayout title="Tunequil Journal" description="View blog posts of calming music">
-    <section class="grid justify-center">
-        <ul class="grid grid-cols-2 gap-x-6 gap-y-8 py-[2em]">
+    <section class="flex flex-col items-center">
+        <ul class="grid grid-cols-2 gap-x-6 gap-y-8 py-[2em] max-w-6xl ">
             {posts.map((post, i) => (
                     <li class={`${i === 0 ? 'col-span-2' : "col-span-1"}`}>
-                        <a href={`/blog/${post.id}/`}>
+                        <a class="flex justify-center" href={`/blog/${post.id}/`}>
                             {post.data.heroImage && (
 
                                     <Image
 
-                                            width={i === 0 ? 1000 : 500}
-                                            height={i === 0 ? 500 : 250}
+                                            width={i === 0 ? 1200 : 600}
                                             src={post.data.heroImage}
-                                            alt=""
+                                            alt=" "
 
                                     />
                             )}

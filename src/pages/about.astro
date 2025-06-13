@@ -1,40 +1,63 @@
 ---
-import BlogPostLayout from '../layouts/BlogPostLayout.astro';
 import AboutHeroImage from '../assets/c-d-x-PDX_a_82obo-unsplash.jpg';
+import BaseLayout from "../layouts/BaseLayout.astro";
+import {Image} from "astro:assets";
+import Accreditation from "../components/Accreditation.astro";
+import FormattedDate from "../components/FormattedDate.astro";
+
+const imageAuthor = "C D-X"
+const imageAuthorLink = "https://unsplash.com/@cdx2?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+const imageSource = "Unsplash"
+const imageSourceLink = "https://unsplash.com/photos/flatlay-photography-of-wireless-headphones-PDX_a_82obo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+const title = "About Me & Tunequil Journal"
+const description = "Why I created Tunequil Journal"
 ---
 
-<BlogPostLayout
-        title="About Me & Tunequil Journal"
-        description="Why I created Tunequil Journal"
-        pubDate={new Date('June 10 2025')}
-        heroImage={AboutHeroImage}
+<BaseLayout
+        title={title}
+        description={description}
 
 
-        imageAuthor="C D-X"
-        imageAuthorLink="https://unsplash.com/@cdx2?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-        imageSource="Unsplash"
-        imageSourceLink="https://unsplash.com/photos/flatlay-photography-of-wireless-headphones-PDX_a_82obo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
 >
+    <div class="flex flex-col  max-w-6xl mx-auto pt-[2em]">
 
-    <h2>Hi, I’m Ben</h2>
-    <p>I’m a music lover who finds comfort in honest, calming songs and enjoys kettlebell workouts to stay balanced.
-        These parts of my life help me find peace and joy every day.</p>
+        {AboutHeroImage && (
 
-    <h2>What is Tunequil Journal?</h2>
-    <p><em>Tunequil</em> is a play on the word “tranquil,” reflecting how music can create a soothing, peaceful space.
-        This blog is my personal journal where I reflect on songs that resonate with me — the ones that bring calm,
-        clarity, or a lift when I need it most.</p>
+                <Image width={1200} src={AboutHeroImage} alt=""/>
 
-    <h2>What to Expect Here</h2>
-    <p>This isn’t a place for reviews or technical music talk. Instead, it’s a space to explore the feelings music stirs
-        up, why certain songs stick with me, and how they shape my mood and moments. I hope it invites you to connect
-        with music in a personal way, too.</p>
 
-    <h2>A Bit More About Me</h2>
-    <p>Besides music, I love kettlebells — I’m no expert, but kettlebell swings help me unwind and stay healthy.
-        Together, these interests keep me grounded and balanced.</p>
-    <p>I used to be a hardcore rocker, but I realized it didn’t quite make me feel the way I wanted to feel. No offense
-        to anyone — I still listen back sometimes for nostalgia and an energy boost.</p>
+        )}
+        {imageSource && imageSourceLink && imageAuthor && imageAuthorLink &&
+                <Accreditation heroImage={AboutHeroImage} imageAuthor={imageAuthor}
+                               imageAuthorLink={imageAuthorLink} imageSource={imageSource}
+                               imageSourceLink={imageSourceLink} alt=""/>}
+        <h1>{title}</h1>
 
-    <p>Thanks for stopping by and sharing this journey with me. 😊</p>
-</BlogPostLayout>
+
+        <h2>Hi, I’m Ben</h2>
+        <p>I’m a music lover who finds comfort in honest, calming songs and enjoys kettlebell workouts to stay balanced.
+            These parts of my life help me find peace and joy every day.</p>
+
+        <h2>What is Tunequil Journal?</h2>
+        <p><em>Tunequil</em> is a play on the word “tranquil,” reflecting how music can create a soothing, peaceful
+            space.
+            This blog is my personal journal where I reflect on songs that resonate with me — the ones that bring calm,
+            clarity, or a lift when I need it most.</p>
+
+        <h2>What to Expect Here</h2>
+        <p>This isn’t a place for reviews or technical music talk. Instead, it’s a space to explore the feelings music
+            stirs
+            up, why certain songs stick with me, and how they shape my mood and moments. I hope it invites you to
+            connect
+            with music in a personal way, too.</p>
+
+        <h2>A Bit More About Me</h2>
+        <p>Besides music, I love kettlebells — I’m no expert, but kettlebell swings help me unwind and stay healthy.
+            Together, these interests keep me grounded and balanced.</p>
+        <p>I used to be a hardcore rocker, but I realized it didn’t quite make me feel the way I wanted to feel. No
+            offense
+            to anyone — I still listen back sometimes for nostalgia and an energy boost.</p>
+
+        <p>Thanks for stopping by and sharing this journey with me. 😊</p>
+    </div>
+</BaseLayout>
