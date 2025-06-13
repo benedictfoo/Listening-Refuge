@@ -1,15 +1,6 @@
 ---
+import TagLayout from '../../layouts/TagLayout.astro'
 import {getCollection} from "astro:content";
-import BlogPost from "../../layouts/BlogPost.astro";
-import {SITE_DESCRIPTION, SITE_TITLE} from "../../consts";
-import BaseHead from "../../components/BaseHead.astro";
-import Header from "../../components/Header.astro";
-import Prose from "../../components/Prose.astro";
-import {Image} from "astro:assets";
-import FormattedDate from "../../components/FormattedDate.astro";
-import Accreditation from "../../components/Accreditation.astro";
-
-
 export async function getStaticPaths() {
     const allPosts = await getCollection("blog");
     const uniqueTags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
@@ -27,62 +18,8 @@ export async function getStaticPaths() {
     });
 
 }
-
-const {tag} = Astro.params;
 const {posts} = Astro.props;
 ---
-<html>
-<head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION}/>
 
-</head>
-<body class="min-h-screen grid grid-rows-[auto_1fr_auto]">
-<Header/>
-<main class="px-4 mx-auto pt-10">
-
-    <h1 class="text-4xl font-black">Posts tagged with {tag}</h1>
-
-    <ul class="grid grid-cols-2 gap-x-6 gap-y-8 py-10">
-        {posts.map((post, i) => (
-                <li class={`${i === 0 ? 'col-span-2' : "col-span-1"}`}>
-                    <a href={`/blog/${post.id}/`}>
-                        {post.data.heroImage && (
-
-                                <Image
-
-                                        width={i === 0 ? 1000 : 500}
-                                        height={i === 0 ? 500 : 250}
-                                        src={post.data.heroImage}
-                                        alt=""
-
-                                />
-                        )}
-                    </a>
-
-                    <div class="px-1">
-                        {post.data.imageAuthor && post.data.imageAuthorLink && post.data.imageSource && post.data.imageSourceLink && (
-                                <Accreditation
-                                        imageAuthor={post.data.imageAuthor}
-                                        imageAuthorLink={post.data.imageAuthorLink}
-                                        imageSource={post.data.imageSource}
-                                        imageSourceLink={post.data.imageSourceLink}
-                                        alt=""
-                                />
-                        )}
-
-                        <a href={`/blog/${post.id}/`}>
-                            <h4 class="text-xl mt-2">{post.data.title}</h4>
-                            <p class="date">
-                                <FormattedDate date={post.data.pubDate}/>
-                            </p>
-                        </a>
-                    </div>
-                </li>
-        ))}
-
-    </ul>
-
-</main>
-</body>
-</html>
+<TagLayout posts={posts}></TagLayout>
 
