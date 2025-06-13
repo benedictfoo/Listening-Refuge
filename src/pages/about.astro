@@ -3,7 +3,7 @@ import AboutHeroImage from '../assets/c-d-x-PDX_a_82obo-unsplash.jpg';
 import BaseLayout from "../layouts/BaseLayout.astro";
 import {Image} from "astro:assets";
 import Accreditation from "../components/Accreditation.astro";
-import FormattedDate from "../components/FormattedDate.astro";
+import Prose from '../components/Prose.astro';
 
 const imageAuthor = "C D-X"
 const imageAuthorLink = "https://unsplash.com/@cdx2?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
@@ -19,7 +19,8 @@ const description = "Why I created Tunequil Journal"
 
 
 >
-    <div class="flex flex-col  max-w-6xl mx-auto pt-[2em]">
+    <Prose><h1>{title}</h1>
+
 
         {AboutHeroImage && (
 
@@ -31,33 +32,37 @@ const description = "Why I created Tunequil Journal"
                 <Accreditation heroImage={AboutHeroImage} imageAuthor={imageAuthor}
                                imageAuthorLink={imageAuthorLink} imageSource={imageSource}
                                imageSourceLink={imageSourceLink} alt=""/>}
-        <h1>{title}</h1>
-
-
-        <h2>Hi, I’m Ben</h2>
-        <p>I’m a music lover who finds comfort in honest, calming songs and enjoys kettlebell workouts to stay balanced.
-            These parts of my life help me find peace and joy every day.</p>
 
         <h2>What is Tunequil Journal?</h2>
-        <p><em>Tunequil</em> is a play on the word “tranquil,” reflecting how music can create a soothing, peaceful
-            space.
-            This blog is my personal journal where I reflect on songs that resonate with me — the ones that bring calm,
-            clarity, or a lift when I need it most.</p>
 
-        <h2>What to Expect Here</h2>
-        <p>This isn’t a place for reviews or technical music talk. Instead, it’s a space to explore the feelings music
-            stirs
-            up, why certain songs stick with me, and how they shape my mood and moments. I hope it invites you to
-            connect
-            with music in a personal way, too.</p>
+        <p>Tunequil Journal — “Tunequil” is a blend of tune and tranquility — a space where I share calming,
+            soothing
+            music, hoping the music brings moments of stillness as we navigate the ebb and flow.</p>
 
-        <h2>A Bit More About Me</h2>
-        <p>Besides music, I love kettlebells — I’m no expert, but kettlebell swings help me unwind and stay healthy.
-            Together, these interests keep me grounded and balanced.</p>
-        <p>I used to be a hardcore rocker, but I realized it didn’t quite make me feel the way I wanted to feel. No
-            offense
-            to anyone — I still listen back sometimes for nostalgia and an energy boost.</p>
+        <h2>What makes Tunequil Journal special?</h2>
 
-        <p>Thanks for stopping by and sharing this journey with me. 😊</p>
-    </div>
+        <p>The music here is not chosen based on numbers or names, but by how it makes us feel - calm and uplifted.
+            And
+            that is what matters the most.</p>
+
+        <h2>Types of music covered here?</h2>
+
+        <p>Hmm... I’ve been listening to folk-pop recently. Happy, bluesy tunes are great too. Soul is great as
+            well.
+            Soft
+            rock and soft pop are fine. Oh, country-pop music is quite okay too -no rap or metal songs. I like any
+            easy-listening music. Also, just to let you know, I’ll try to share songs that at least sound good. I
+            don’t
+            want
+            the music to deafen you or bore the crap out of you.</p>
+
+        <h2>Connect with me</h2>
+
+        <p>You can follow me at:_________________. I would love to hear your thoughts. Tell me what music calms you
+            or
+            brings you joy. Feel free to let me know how I can improve.</p>
+
+        <p>All the Best - enjoy reading the blog and have fun with the music.</p></Prose>
+
+
 </BaseLayout>
