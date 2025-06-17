@@ -7,7 +7,7 @@ imageAuthor: "Tomáš Hrubý"
 imageAuthorLink: "https://unsplash.com/@thsmhk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
 imageSource: 'Unsplash'
 imageSourceLink: "https://unsplash.com/photos/a-bird-is-sitting-on-a-branch-of-a-tree-6ummZMrOuCk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-tags: [ "Siobhan Miller", "folk music", "song reflection", "Queen of Argyll", "cover songs", "Bloom album" ]
+tags: [ "folk music", "song reflection",  "cover" ]
 date: 2025-06-13
 ---
 

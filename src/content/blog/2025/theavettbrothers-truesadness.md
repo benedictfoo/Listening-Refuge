@@ -7,7 +7,7 @@ imageAuthor: "Spencer Scott Pugh"
 imageAuthorLink: "https://unsplash.com/@spencerscottpugh?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
 imageSource: 'Unsplash'
 imageSourceLink: "https://unsplash.com/photos/boy-band-playing-on-stage-with-led-lights--5zuam4o4RE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-tags: [ "The Avett Brothers", "folk music", "song reflection", "True Sadness", "redemption", "Christianity", "2016 albums" ]
+tags: [ "folk music", "song reflection" ]
 date: "2025-06-14"
 ---
 
