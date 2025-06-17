@@ -1,21 +1,25 @@
 ---
 import type {HTMLAttributes} from 'astro/types';
 
+
 type Props = HTMLAttributes<'a'>;
 
 const {href} = Astro.props;
 const pathname = Astro.url.pathname.replace(import.meta.env.BASE_URL, '');
 const subpath = pathname.match(/[^\/]+/g);
 const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
+const borderBottom = isActive ? 'border-b-green-500' : 'border-b-transparent'
 ---
 
-<a href={href} class=`px-4 py-2 rounded font-semibold
-          bg-transparent text-gray-800
-          hover:bg-green-50 hover:text-green-600
-          
-          transition duration-150 ease-in-out
-          border-b-2 border-transparent
-       active:bg-green-200 active:scale-95 active:border-green-500`>
+<a href={href} class={`px-4 py-2 rounded font-semibold
+    bg-transparent text-gray-800
+    hover:text-green-600
+    transition duration-150 ease-in-out
+   ${borderBottom}
+    border-b-2
+    active:scale-95 active:border-b-green-500
+`}>
     <slot/>
 </a>
+
 
