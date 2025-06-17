@@ -14,7 +14,7 @@ const posts = (await getCollection('blog')).sort(
     <section class="flex flex-col items-center">
         <ul class="grid grid-cols-2 gap-x-6 gap-y-8 py-[2em] max-w-6xl ">
             {posts.map((post, i) => (
-                    <li class={`${i === 0 ? 'col-span-2' : "col-span-1"} bg-cyan-50  rounded-md shadow-sm mb-6`}>
+                    <li class={`${i === 0 ? 'col-span-2' : "col-span-1"} bg-orange-50  rounded-md shadow-sm mb-6`}>
                         <a class="flex justify-center" href={`/blog/${post.id}/`}>
                             {post.data.heroImage && (
 
