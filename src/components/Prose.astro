@@ -1,7 +1,8 @@
 ---
+const {class: className = ''} = Astro.props
 ---
 <div
-        class="prose mx-auto">
+        class=`prose mx-auto ${className} `>
     <slot/>
     <style is:inline>
         img {

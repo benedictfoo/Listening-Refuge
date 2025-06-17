@@ -4,6 +4,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import {Image} from "astro:assets";
 import Accreditation from "../components/Accreditation.astro";
 import Prose from '../components/Prose.astro';
+import {COLOR_SECONDARY_SM} from "../consts";
 
 const imageAuthor = "C D-X"
 const imageAuthorLink = "https://unsplash.com/@cdx2?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
@@ -28,43 +29,44 @@ const description = "What is Tunequil Journal"
 
 
         )}
-        {imageSource && imageSourceLink && imageAuthor && imageAuthorLink &&
+        <div class={`${COLOR_SECONDARY_SM} px-3 pb-3`}>{imageSource && imageSourceLink && imageAuthor && imageAuthorLink &&
                 <Accreditation heroImage={AboutHeroImage} imageAuthor={imageAuthor}
                                imageAuthorLink={imageAuthorLink} imageSource={imageSource}
                                imageSourceLink={imageSourceLink} alt=""/>}
 
-        <h2>What is Tunequil Journal?</h2>
+            <h2>What is Tunequil Journal?</h2>
 
-        <p>Tunequil Journal — “Tunequil” is a blend of tune and tranquility — a space where I share calming,
-            soothing
-            music, hoping the music brings moments of stillness as we navigate the ebb and flow.</p>
+            <p>Tunequil Journal — “Tunequil” is a blend of tune and tranquility — a space where I share calming,
+                soothing
+                music, hoping the music brings moments of stillness as we navigate the ebb and flow.</p>
 
-        <h2>What makes Tunequil Journal special?</h2>
+            <h2>What makes Tunequil Journal special?</h2>
 
-        <p>The music here is not chosen based on numbers or names, but by how it makes us feel - calm and uplifted.
-            And
-            that is what matters the most.</p>
+            <p>The music here is not chosen based on numbers or names, but by how it makes us feel - calm and uplifted.
+                And
+                that is what matters the most.</p>
 
-        <h2>Types of music covered here?</h2>
+            <h2>Types of music covered here?</h2>
 
-        <p>Hmm... I’ve been listening to folk-pop recently. Happy, bluesy tunes are great too. Soul is great as
-            well.
-            Soft
-            rock and soft pop are fine. Oh, country-pop music is quite okay too -no rap or metal songs. I like any
-            easy-listening music. Also, just to let you know, I’ll try to share songs that at least sound good. I
-            don’t
-            want
-            the music to deafen you or bore the crap out of you.</p>
+            <p>Hmm... I’ve been listening to folk-pop recently. Happy, bluesy tunes are great too. Soul is great as
+                well.
+                Soft
+                rock and soft pop are fine. Oh, country-pop music is quite okay too -no rap or metal songs. I like any
+                easy-listening music. Also, just to let you know, I’ll try to share songs that at least sound good. I
+                don’t
+                want
+                the music to deafen you or bore the crap out of you.</p>
 
-        <h2>Connect with me</h2>
+            <h2>Connect with me</h2>
 
-        <p>You can follow me at: <a href="https://x.com/tunequiljournal" target="_blank">X</a>, or
-            <a href="https://www.instagram.com/tunequiljournal" target="_blank">
-                Instagram</a>. I would love to hear your thoughts. Tell me what music calms you
-            or
-            brings you joy. Feel free to let me know how I can improve.</p>
+            <p>You can follow me at: <a href="https://x.com/tunequiljournal" target="_blank">X</a>, or
+                <a href="https://www.instagram.com/tunequiljournal" target="_blank">
+                    Instagram</a>. I would love to hear your thoughts. Tell me what music calms you
+                or
+                brings you joy. Feel free to let me know how I can improve.</p>
 
-        <p>All the Best - enjoy reading the blog and have fun with the music.</p></Prose>
+            <p>All the Best - enjoy reading the blog and have fun with the music.</p></div>
+    </Prose>
 
 
 </BaseLayout>

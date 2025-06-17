@@ -1,14 +1,12 @@
 ---
 import BaseLayout from './BaseLayout.astro';
-import type {CollectionEntry} from 'astro:content';
-
 import FormattedDate from '../components/FormattedDate.astro';
-
 import Accreditation from "../components/Accreditation.astro";
 import {Image} from 'astro:assets'
 import Prose from "../components/Prose.astro";
+import {COLOR_PRIMARY, COLOR_SECONDARY, COLOR_SECONDARY_SM} from "../consts";
 
-type Props = CollectionEntry<'blog'>['data'];
+
 
 const {
     title,
@@ -26,43 +24,45 @@ const {
 <BaseLayout title={title} description={description} image={heroImage}>
 
 
-    <Prose class="">
+    <Prose class={`${COLOR_SECONDARY_SM}`}>
         {heroImage && (
 
 
-                <div>
+                <div class={COLOR_PRIMARY}>
                     <Image width={1020} src={heroImage} alt=""/>
                 </div>
 
 
         )}
-        {imageSource && imageSourceLink && imageAuthor && imageAuthorLink &&
-                <Accreditation heroImage={heroImage} imageAuthor={imageAuthor}
-                               imageAuthorLink={imageAuthorLink} imageSource={imageSource}
-                               imageSourceLink={imageSourceLink} alt=""/>}
-        <h1>{title}</h1>
+        <div class="px-3">
+            {imageSource && imageSourceLink && imageAuthor && imageAuthorLink &&
+                    <Accreditation heroImage={heroImage} imageAuthor={imageAuthor}
+                                   imageAuthorLink={imageAuthorLink} imageSource={imageSource}
+                                   imageSourceLink={imageSourceLink} alt=""/>}
+            <h1>{title}</h1>
 
 
-        <FormattedDate date={pubDate}/>
-        {
-            updatedDate && (
-                        <div class="">
-                            Last updated on
-                            <FormattedDate date={updatedDate}/>
-                        </div>
-            )
-        }
+            <FormattedDate date={pubDate}/>
+            {
+                updatedDate && (
+                            <div class="">
+                                Last updated on
+                                <FormattedDate date={updatedDate}/>
+                            </div>
+                )
+            }
 
-        <p class="flex flex-wrap gap-2">
-            {tags?.map((tag: any) =>
-                    <button class="px-3 py-2 rounded-md bg-emerald-300 border-black"><a class="no-underline"
-                                                                                        href={`/tags/${tag}/`}>{tag}</a>
-                    </button>)}
-        </p>
+            <p class="flex flex-wrap gap-2">
+                {tags?.map((tag: any) =>
+                        <button class="px-3 py-2 rounded-md bg-emerald-300 border-black"><a class="no-underline"
+                                                                                            href={`/tags/${tag}/`}>{tag}</a>
+                        </button>)}
+            </p>
 
-        <hr/>
+            <hr/>
 
-        <slot/>
+            <slot/>
+        </div>
     </Prose>
 
 </BaseLayout>
