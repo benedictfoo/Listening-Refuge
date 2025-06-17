@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import {COLOR_PRIMARY} from "../consts";
 
 const {
     title,
@@ -16,7 +17,7 @@ const {
 
 </head>
 
-<body class="bg-cyan-100">
+<body class=`${COLOR_PRIMARY}`>
 <div class="grid grid-rows-[auto_1fr_auto] min-h-screen">
     <Header/>
     <main class="px-6">
