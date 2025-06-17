@@ -13,7 +13,7 @@ const posts = (await getCollection('blog')).sort(
 
 <BaseLayout title={SITE_TITLE} description {SITE_DESCRIPTION}>
     <section class="flex flex-col items-center">
-        <ul class="grid grid-cols-2 gap-x-6 gap-y-8 py-[2em] max-w-6xl ">
+        <ul class="grid grid-cols-2 gap-x-6 gap-y-8 py-[2em]  max-w-6xl ">
             {posts.map((post, i) => (
                     <li class={`${i === 0 ? 'col-span-2' : "col-span-1"}  ${COLOR_SECONDARY}  rounded-b-md rounded-bl-md shadow-sm mb-6`}>
                         <a class="flex justify-center" href={`/blog/${post.id}/`}>
