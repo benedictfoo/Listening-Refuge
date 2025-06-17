@@ -4,14 +4,14 @@ import {getCollection} from "astro:content";
 import {Image} from "astro:assets";
 import Accreditation from "../components/Accreditation.astro";
 import FormattedDate from "../components/FormattedDate.astro";
-import {COLOR_PRIMARY, COLOR_SECONDARY} from "../consts";
+import {COLOR_PRIMARY, COLOR_SECONDARY, SITE_DESCRIPTION, SITE_TITLE} from "../consts";
 
 const posts = (await getCollection('blog')).sort(
     (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 ---
 
-<BaseLayout title="Tunequil Journal" description="View blog posts of calming music">
+<BaseLayout title={SITE_TITLE} description {SITE_DESCRIPTION}>
     <section class="flex flex-col items-center">
         <ul class="grid grid-cols-2 gap-x-6 gap-y-8 py-[2em] max-w-6xl ">
             {posts.map((post, i) => (
