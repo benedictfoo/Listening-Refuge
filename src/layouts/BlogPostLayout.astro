@@ -28,10 +28,13 @@ const {
 
     <Prose class="">
         {heroImage && (
-                <div class="">
-                    <Image width={1020} height={510} src={heroImage} alt=""/>
 
+
+                <div>
+                    <Image width={1020} src={heroImage} alt=""/>
                 </div>
+
+
         )}
         {imageSource && imageSourceLink && imageAuthor && imageAuthorLink &&
                 <Accreditation heroImage={heroImage} imageAuthor={imageAuthor}
