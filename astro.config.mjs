@@ -6,7 +6,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://tunequil-journal.netlify.app/',
+    site: 'https://listeningrefuge.netlify.app/',
     integrations: [mdx(), sitemap()],
     vite: {
         plugins: [tailwindcss()],
