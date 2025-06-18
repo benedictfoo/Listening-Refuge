@@ -2,7 +2,6 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import {COLOR_PRIMARY} from "../consts";
 
 const {
     title,
@@ -17,7 +16,7 @@ const {
 
 </head>
 
-<body class=`${COLOR_PRIMARY}`>
+<body class={"bg-stone-50"}>
 <div class="grid grid-rows-[auto_1fr_auto] min-h-screen">
     <Header/>
     <main class="px-6">

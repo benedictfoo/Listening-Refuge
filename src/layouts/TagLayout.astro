@@ -40,16 +40,8 @@ const {posts} = Astro.props;
                             )}
                         </a>
 
-                        <div class={`p-3 ${COLOR_SECONDARY_SM}  rounded-b-md rounded-bl-md shadow-sm mb-6 `}>
-                            {post.data.imageAuthor && post.data.imageAuthorLink && post.data.imageSource && post.data.imageSourceLink && (
-                                    <Accreditation
-                                            imageAuthor={post.data.imageAuthor}
-                                            imageAuthorLink={post.data.imageAuthorLink}
-                                            imageSource={post.data.imageSource}
-                                            imageSourceLink={post.data.imageSourceLink}
-                                            alt=""
-                                    />
-                            )}
+                        <div class={`p-3   rounded-b-md rounded-bl-md shadow-sm mb-6 `}>
+
 
                             <a href={`/blog/${post.id}/`}>
                                 <h4 class="text-xl mt-2">{post.data.title}</h4>

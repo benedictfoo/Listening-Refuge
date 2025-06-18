@@ -3,7 +3,7 @@ import {getCollection} from "astro:content";
 
 import BaseLayout from "./BaseLayout.astro";
 import Prose from "../components/Prose.astro";
-import {COLOR_SECONDARY, COLOR_SECONDARY_SM} from "../consts";
+import {COLOR_SECONDARY} from "../consts";
 
 const allPosts = await getCollection("blog");
 const uniqueTags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
@@ -12,14 +12,14 @@ const uniqueTags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
 
 <BaseLayout title="Music tags" description="View the tags of music posts">
     <Prose>
-        <div class=`${COLOR_SECONDARY_SM} p-3 rounded-md shadow-sm mb-6`>
+        <div class=` p-3 rounded-md shadow-sm mb-6`>
             <h1>Tags of my Posts</h1>
             <h2>Explore topics that interest you</h2>
 
             <ul class="flex flex-wrap gap-2 p-0">
                 {uniqueTags?.map((tag: any) =>
                         <li role="option"
-                            class="px-3 list-none py-2 rounded-md bg-emerald-300  ">
+                            class="px-3 list-none py-2 rounded-md bg-green-400  ">
                             <a
                                     class="no-underline transition duration-150  block active:scale-95 border-b-2 border-b-transparent active:border-b-2 hover:border-b-black "
                                     href={`/tags/${tag}/`}>{tag}</a>
