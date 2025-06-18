@@ -2,13 +2,13 @@
 import BaseLayout from "./BaseLayout.astro";
 import {Image} from "astro:assets";
 import FormattedDate from "../components/FormattedDate.astro";
-const {posts, title, description} = Astro.props;
+const {posts,  title} = Astro.props;
 ---
-<BaseLayout title={title} description={description}>
+
 
 
     <div class="grid justify-center max-w-6xl mx-auto">
-        <h1 class="text-4xl font-black pt-[1em]">{title}</h1>
+        {title && ( <h1 class="text-4xl font-black pt-[1em]">{title}</h1>)}
 
         <ul class="block  py-10 list-none px-0 ">
             {posts.map((post, i) => (

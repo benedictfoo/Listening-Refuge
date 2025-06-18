@@ -1,5 +1,5 @@
 ---
-title: "Queen of Argyll – Siobhan Miller's Glowing Cover"
+title: "Siobhan Miller - Queen of Argyll"
 description: "A heartfelt reflection on Siobhan Miller’s 2022 cover of 'Queen of Argyll,' exploring the narrator’s passionate admiration and the song’s bright, emotional instrumentation."
 pubDate: 'Jun 13 2025'
 heroImage: './siobhanmiller-queenofargyll.jpg'

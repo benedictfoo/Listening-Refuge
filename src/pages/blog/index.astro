@@ -1,9 +1,12 @@
 ---
 import {getCollection} from "astro:content";
 import PostGridLayout from "../../layouts/PostGridLayout.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
 const posts = (await getCollection('blog')).sort(
     (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 ---
 
-<PostGridLayout posts={posts}/>
+<BaseLayout>
+    <PostGridLayout posts={posts}/>
+</BaseLayout>
