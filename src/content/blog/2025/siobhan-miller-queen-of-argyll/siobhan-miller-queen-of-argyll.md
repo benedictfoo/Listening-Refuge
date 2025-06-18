@@ -1,8 +1,8 @@
 ---
-title: "Siobhan Miller - Queen of Argyll"
+title: "Siobhan Miller — Queen of Argyll"
 description: "A heartfelt reflection on Siobhan Miller’s 2022 cover of 'Queen of Argyll,' exploring the narrator’s passionate admiration and the song’s bright, emotional instrumentation."
 pubDate: 'Jun 13 2025'
-heroImage: './siobhanmiller-queenofargyll.jpg'
+heroImage: './siobhan-miller-queenofargyll.jpg'
 tags: [ "folk music", "song reflection",  "cover" ]
 date: 2025-06-13
 ---

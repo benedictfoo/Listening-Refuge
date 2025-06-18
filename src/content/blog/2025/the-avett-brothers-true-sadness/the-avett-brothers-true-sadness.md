@@ -1,5 +1,5 @@
 ---
-title: "True Sadness – The Avett Brothers' Song of Pain, Empathy, and Redemption"
+title: "The Avett Brothers — True Sadness"
 description: "A reflection on 'True Sadness,' the title track of The Avett Brothers’ 2016 album — exploring its emotional complexity, hopeful tone, and the narrator’s journey through suffering and grace."
 pubDate: 'Jun 14 2025'
 heroImage: './the-avett-brothers-true-sadness.jpg'
