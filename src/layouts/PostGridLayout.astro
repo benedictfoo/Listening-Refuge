@@ -1,47 +1,59 @@
 ---
-import BaseLayout from "./BaseLayout.astro";
 import {Image} from "astro:assets";
 import FormattedDate from "../components/FormattedDate.astro";
-const {posts,  title} = Astro.props;
+
+
+const {posts, title} = Astro.props;
+function getExcerpt(post) {
+    const content = post.rendered?.html || '';
+    const match = content.match(/<p>(.*?)<\/p>/s);  // note the 's' flag for multiline
+    if (!match) return '';
+    // Remove any HTML tags inside the paragraph
+    return match[1].replace(/<[^>]+>/g, '').trim();
+}
+
+const postsWithExcerpt = await Promise.all(posts.map((post) => ({
+    ...post,
+    excerpt: getExcerpt(post)
+})));
 ---
 
 
+<div class="grid justify-center max-w-6xl mx-auto">
+    {title && (<h1 class="text-4xl font-black pt-[1em]">{title}</h1>)}
 
-    <div class="grid justify-center max-w-6xl mx-auto">
-        {title && ( <h1 class="text-4xl font-black pt-[1em]">{title}</h1>)}
+    <ul class="block  py-10 list-none px-0 ">
+        {postsWithExcerpt.map((post, i) => (
+                <li class={`${i === 0 ? 'col-span-2' : "col-span-1"} `}>
+                    <a href={`/blog/${post.id}/`}>
+                        {post.data.heroImage && (
 
-        <ul class="block  py-10 list-none px-0 ">
-            {posts.map((post, i) => (
-                    <li class={`${i === 0 ? 'col-span-2' : "col-span-1"} `}>
+                                <Image
+
+                                        width={1200}
+
+                                        src={post.data.heroImage}
+                                        alt=""
+
+                                />
+                        )}
+                    </a>
+
+                    <div class={`p-3   rounded-b-md rounded-bl-md shadow-sm mb-6 `}>
+
+
                         <a href={`/blog/${post.id}/`}>
-                            {post.data.heroImage && (
-
-                                    <Image
-
-                                            width={1200}
-
-                                            src={post.data.heroImage}
-                                            alt=""
-
-                                    />
-                            )}
+                            <h4 class="text-xl mt-2">{post.data.title}</h4>
+                            <p class="date">
+                                <FormattedDate date={post.data.pubDate}/>
+                            </p>
+                            <p>{post.excerpt}</p>
                         </a>
+                    </div>
+                </li>
+        ))}
 
-                        <div class={`p-3   rounded-b-md rounded-bl-md shadow-sm mb-6 `}>
-
-
-                            <a href={`/blog/${post.id}/`}>
-                                <h4 class="text-xl mt-2">{post.data.title}</h4>
-                                <p class="date">
-                                    <FormattedDate date={post.data.pubDate}/>
-                                </p>
-                            </a>
-                        </div>
-                    </li>
-            ))}
-
-        </ul>
-    </div>
+    </ul>
+</div>
 
 
-</BaseLayout>
