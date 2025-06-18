@@ -1,10 +1,10 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 import FormattedDate from '../components/FormattedDate.astro';
-import Accreditation from "../components/Accreditation.astro";
+
 import {Image} from 'astro:assets'
 import Prose from "../components/Prose.astro";
-import {COLOR_PRIMARY, COLOR_SECONDARY} from "../consts";
+
 
 
 
@@ -13,10 +13,7 @@ const {
     description,
     pubDate,
     updatedDate,
-    imageAuthor,
-    imageAuthorLink,
-    imageSource,
-    imageSourceLink,
+
     heroImage, tags
 } = Astro.props;
 ---
