@@ -1,21 +1,8 @@
 ---
-import {getCollection} from "astro:content";
 import BaseLayout from "./BaseLayout.astro";
-
-import Prose from '../components/Prose.astro'
-
-
 import {Image} from "astro:assets";
 import FormattedDate from "../components/FormattedDate.astro";
-import Accreditation from "../components/Accreditation.astro";
-import {COLOR_SECONDARY, COLOR_SECONDARY_SM} from "../consts";
-
-
-
-const {tag} = Astro.params;
-const title = `Posts tagged with ${tag}`
-const description = `Find posts tagged as ${tag}`
-const {posts} = Astro.props;
+const {posts, title, description} = Astro.props;
 ---
 <BaseLayout title={title} description={description}>
 
