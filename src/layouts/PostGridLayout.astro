@@ -1,21 +1,9 @@
 ---
 import {Image} from "astro:assets";
 import FormattedDate from "../components/FormattedDate.astro";
-
+import PostExcerpt from '@igor.dvlpr/astro-post-excerpt'
 
 const {posts, title} = Astro.props;
-function getExcerpt(post) {
-    const content = post.rendered?.html || '';
-    const match = content.match(/<p>(.*?)<\/p>/s);  // note the 's' flag for multiline
-    if (!match) return '';
-    // Remove any HTML tags inside the paragraph
-    return match[1].replace(/<[^>]+>/g, '').trim();
-}
-
-const postsWithExcerpt = await Promise.all(posts.map((post) => ({
-    ...post,
-    excerpt: getExcerpt(post)
-})));
 ---
 
 
@@ -23,7 +11,7 @@ const postsWithExcerpt = await Promise.all(posts.map((post) => ({
     {title && (<h1 class="text-4xl font-black pt-[1em]">{title}</h1>)}
 
     <ul class="block  py-10 list-none px-0 ">
-        {postsWithExcerpt.map((post, i) => (
+        {posts.map((post, i) => (
                 <li class={`${i === 0 ? 'col-span-2' : "col-span-1"} `}>
                     <a href={`/blog/${post.id}/`}>
                         {post.data.heroImage && (
@@ -47,7 +35,7 @@ const postsWithExcerpt = await Promise.all(posts.map((post) => ({
                             <p class="date">
                                 <FormattedDate date={post.data.pubDate}/>
                             </p>
-                            <p>{post.excerpt}</p>
+                            <PostExcerpt post={post} smartEllipsis={true} maxLength={0}/>
                         </a>
                     </div>
                 </li>
