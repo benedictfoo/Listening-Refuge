@@ -10,7 +10,7 @@ const {posts, title, description} = Astro.props;
     <div class="grid justify-center max-w-6xl mx-auto">
         <h1 class="text-4xl font-black pt-[1em]">{title}</h1>
 
-        <ul class="grid grid-cols-2 gap-x-6 gap-y-8 py-10 list-none px-0 ">
+        <ul class="block  py-10 list-none px-0 ">
             {posts.map((post, i) => (
                     <li class={`${i === 0 ? 'col-span-2' : "col-span-1"} `}>
                         <a href={`/blog/${post.id}/`}>
@@ -18,7 +18,7 @@ const {posts, title, description} = Astro.props;
 
                                     <Image
 
-                                            width={i === 0 ? 1200 : 600}
+                                            width={1200}
 
                                             src={post.data.heroImage}
                                             alt=""
