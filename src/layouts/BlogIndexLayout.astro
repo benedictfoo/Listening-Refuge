@@ -11,7 +11,7 @@ const posts = (await getCollection('blog')).sort(
 );
 ---
 
-<BaseLayout title={SITE_TITLE} description {SITE_DESCRIPTION}>
+<BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
     <section class="flex flex-col items-center">
         <ul class="grid grid-cols-2 gap-x-6 gap-y-8 py-[2em]  max-w-6xl ">
             {posts.map((post, i) => (
