@@ -1,15 +1,6 @@
 ---
-import AboutHeroImage from '../assets/c-d-x-PDX_a_82obo-unsplash.jpg';
 import BaseLayout from "../layouts/BaseLayout.astro";
-import {Image} from "astro:assets";
-import Accreditation from "../components/Accreditation.astro";
 import Prose from '../components/Prose.astro';
-import {COLOR_SECONDARY_SM} from "../consts";
-
-const imageAuthor = "C D-X"
-const imageAuthorLink = "https://unsplash.com/@cdx2?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-const imageSource = "Unsplash"
-const imageSourceLink = "https://unsplash.com/photos/flatlay-photography-of-wireless-headphones-PDX_a_82obo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
 const title = "About Listening Refuge"
 const description = "What is Listening Refuge"
 ---
@@ -23,16 +14,7 @@ const description = "What is Listening Refuge"
     <Prose><h1>{title}</h1>
 
 
-        {AboutHeroImage && (
-
-                <Image width={1200} src={AboutHeroImage} alt=""/>
-
-
-        )}
-        <div class={`sm:bg-orange-50 px-3 pb-3`}>{imageSource && imageSourceLink && imageAuthor && imageAuthorLink &&
-                <Accreditation heroImage={AboutHeroImage} imageAuthor={imageAuthor}
-                               imageAuthorLink={imageAuthorLink} imageSource={imageSource}
-                               imageSourceLink={imageSourceLink} alt=""/>}
+        <div class={` px-3 pb-3`}>
 
             <h2>What is Learning Refuge?</h2>
 
