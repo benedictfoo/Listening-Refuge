@@ -11,13 +11,13 @@ const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
 const borderBottom = isActive ? 'border-b-green-600' : 'border-b-transparent'
 ---
 
-<a href={href} class={`px-4 py-2 rounded font-semibold
+<a href={href} class={`px-4 py-2  font-semibold
     bg-transparent text-gray-800
     hover:text-green-600
     transition duration-150 ease-in-out
    ${borderBottom}
     border-b-2
-    active:scale-95 active:border-b-green-500 active:text-green-600
+    active:scale-95 active:border-b-green-500 active:text-green-500
 `}>
     <slot/>
 </a>
