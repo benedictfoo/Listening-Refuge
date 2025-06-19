@@ -8,16 +8,16 @@ const {href} = Astro.props;
 const pathname = Astro.url.pathname.replace(import.meta.env.BASE_URL, '');
 const subpath = pathname.match(/[^\/]+/g);
 const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
-const borderBottom = isActive ? 'border-b-green-600' : 'border-b-transparent'
+const borderBottom = isActive ? 'border-b-sky-600' : 'border-b-transparent'
 ---
 
 <a href={href} class={`px-4 py-2  font-semibold
     bg-transparent text-gray-800
-    hover:text-green-600
+    hover:text-sky-600
     transition duration-150 ease-in-out
    ${borderBottom}
     border-b-2
-    active:scale-95 active:border-b-green-500 active:text-green-500
+    active:scale-95 active:border-b-sky-500 active:text-sky-500
 `}>
     <slot/>
 </a>
