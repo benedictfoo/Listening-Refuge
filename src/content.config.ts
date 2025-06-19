@@ -13,6 +13,7 @@ const blog = defineCollection({
         updatedDate: z.coerce.date().optional(),
         heroImage: image().optional(),
         tags: z.array(z.string()).default(['uncategorized']),
+        youtubeId: z.string().optional(),
     }),
 });
 

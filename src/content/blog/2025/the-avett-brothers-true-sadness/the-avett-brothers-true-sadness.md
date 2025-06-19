@@ -3,6 +3,7 @@ title: "The Avett Brothers — True Sadness"
 description: "A reflection on 'True Sadness,' the title track of The Avett Brothers’ 2016 album — exploring its emotional complexity, hopeful tone, and the narrator’s journey through suffering and grace."
 pubDate: 'Jun 14 2025'
 heroImage: './the-avett-brothers-true-sadness.jpg'
+youtubeId: "n-lBmpz8Iso"
 tags: [ "folk music", "song reflection" ]
 date: "2025-06-14"
 ---
