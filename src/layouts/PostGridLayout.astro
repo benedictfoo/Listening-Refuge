@@ -3,28 +3,32 @@ import {Image} from "astro:assets";
 import FormattedDate from "../components/FormattedDate.astro";
 import PostExcerpt from '@igor.dvlpr/astro-post-excerpt'
 import type {CollectionEntry} from "astro:content";
+
 type Post = CollectionEntry<'blog'>
 interface Props {
     posts: Post[];
     title?: string
 
 }
+
+
 const {posts, title} = Astro.props;
 ---
 
 
-<div class="grid justify-center max-w-6xl mx-auto">
+<div class="px-3">
     {title && (<h1 class="text-4xl font-black ">{title}</h1>)}
 
-    <ul class="list-none py-3 ">
+    <ul class="list-none py-3 sm:grid sm:grid-cols-3 sm:gap-3">
         {posts.map((post, i) => (
-                <li class="py-3">
+                <li class="py-3 md:col-span-1 ">
                     <a href={`/blog/${post.id}/`}>
                         {post.data.heroImage && (
 
                                 <Image
-
-                                        width={1200}
+                                        class="w-full"
+                                        widths={[400, 640, 800, 1280]}
+                                        sizes="(max-width: 639px) 100vw, 33vw"
 
                                         src={post.data.heroImage}
                                         alt=""
