@@ -4,7 +4,7 @@ description: "A heartfelt reflection on Siobhan Miller’s 2022 cover of 'Queen 
 pubDate: 'Jun 13 2025'
 heroImage: './siobhan-miller-queenofargyll.jpg'
 youtubeId: '7j8YZF0xZ3A'
-tags: [ "folk music", "song reflection",  "cover" ]
+tags: [ "folk music",   "cover" ]
 date: 2025-06-13
 ---
 
