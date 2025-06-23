@@ -7,7 +7,7 @@ type Props = HTMLAttributes<'a'>;
 const {href} = Astro.props;
 const pathname = Astro.url.pathname.replace(import.meta.env.BASE_URL, '');
 const subpath = pathname.match(/[^\/]+/g);
-const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
+const isActive = href === pathname;
 const borderBottom = isActive ? 'border-b-sky-600' : 'border-b-transparent'
 ---
 
