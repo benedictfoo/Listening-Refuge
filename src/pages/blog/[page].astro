@@ -9,14 +9,20 @@ import PaginationButtons from "../../components/PaginationButtons.astro";
 export async function getStaticPaths({paginate}: { paginate: any }) {
     const posts = (await getBlogPosts()).sort(
         (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-    );
-    const lastPage = Math.ceil(posts.length / POSTS_PER_PAGE)
-    return paginate(posts, {pageSize: POSTS_PER_PAGE, lastPage});
+    ).slice(POSTS_PER_PAGE)
+
+    const paginated = await paginate(posts, {pageSize: POSTS_PER_PAGE});
+    return paginated.map((pageObj, idx) => ({
+        ...pageObj,
+        params: {page: String(idx + 2)}
+    }));
 }
 
-const {page}: { page: { data: CollectionEntry<'blog'>[]; currentPage: number; lastPage: number } } = Astro.props;
+const {page} = Astro.props;
+const realCurrentPage = page.currentPage + 1;
+const totalPages = Math.ceil((await getBlogPosts()).length / POSTS_PER_PAGE);
 ---
 <BaseLayout>
     <PostGridLayout posts={page.data}/>
-    <PaginationButtons currPage={page.currentPage} lastPage={page.lastPage}/>
+    <PaginationButtons currPage={realCurrentPage} lastPage={totalPages}/>
 </BaseLayout>

@@ -7,7 +7,7 @@ const {currPage, lastPage} = Astro.props
     <li class="flex items-center justify-end">
         {
             currPage !== 1 &&
-                <Button text="&#8592" href={`/blog/${currPage - 1}`}/>}
+                <Button text="&#8592" href={currPage === 2 ? '/blog/' : `/blog/${currPage - 1}`}/>}
     </li>
     <li class="flex items-center justify-center "><p>You are on page <strong>{currPage}</strong></p></li>
     <li class="flex items-center">
