@@ -17,5 +17,6 @@ const currPage = 1
 
 <BaseLayout>
     <PostGridLayout posts={firstPagePosts}/>
-    <PaginationButtons baseHref={'/blog'} currPage={currPage} lastPage={lastPage}/>
+    {lastPage > 1 &&
+            <PaginationButtons baseHref={'/blog'} currPage={currPage} lastPage={lastPage}/>}
 </BaseLayout>

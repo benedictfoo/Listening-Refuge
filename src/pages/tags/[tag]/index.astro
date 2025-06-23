@@ -5,7 +5,7 @@ import {getCollection} from 'astro:content';
 import PostGridLayout from '../../../layouts/PostGridLayout.astro';
 import PaginationButtons from '../../../components/PaginationButtons.astro';
 import BaseLayout from "../../../layouts/BaseLayout.astro";
-import Prose from "../../../components/Prose.astro";
+import {POSTS_PER_PAGE} from "../../../consts";
 
 export async function getStaticPaths() {
     const all = await getCollection('blog');
@@ -13,7 +13,7 @@ export async function getStaticPaths() {
     return tags.map(tag => ({params: {tag}}));
 }
 
-const POSTS_PER_PAGE = 1;
+
 const {tag} = Astro.params;
 
 const all = await getCollection('blog');
@@ -27,11 +27,8 @@ const totalPages = Math.ceil(filtered.length / POSTS_PER_PAGE);
 
 <BaseLayout>
 
-    <Prose>
-        <h1 class="mx-auto sm:w-[33vw] ">{`Posts tagged: ${tag}`}</h1>
-    </Prose>
 
-    <PostGridLayout posts={page1}/>
+    <PostGridLayout posts={page1} title={`Posts tagged: ${tag}`}/>
     {totalPages > 1 && (
             <PaginationButtons
                     currPage={1}

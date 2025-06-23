@@ -24,5 +24,6 @@ const totalPages = Math.ceil((await getBlogPosts()).length / POSTS_PER_PAGE);
 ---
 <BaseLayout>
     <PostGridLayout posts={page.data}/>
-    <PaginationButtons baseHref={"/blog"} currPage={realCurrentPage} lastPage={totalPages}/>
+    {totalPages > 1 && (
+            <PaginationButtons baseHref={"/blog"} currPage={realCurrentPage} lastPage={totalPages}/>)}
 </BaseLayout>

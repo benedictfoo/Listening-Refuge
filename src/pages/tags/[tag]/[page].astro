@@ -8,7 +8,7 @@ import PaginationButtons from '../../../components/PaginationButtons.astro';
 
 import {POSTS_PER_PAGE} from "../../../consts";
 import BaseLayout from "../../../layouts/BaseLayout.astro";
-import Prose from "../../../components/Prose.astro";
+
 
 export async function getStaticPaths({paginate}) {
     const all = await getCollection('blog');
@@ -45,13 +45,12 @@ const totalPages = page.lastPage;
 ---
 
 <BaseLayout>
-    <Prose>
-        <h1 class="mx-auto sm:w-[33vw] ">{`Posts tagged: ${tag}`}</h1>
-    </Prose>
-    <PostGridLayout posts={page.data}/>
-    <PaginationButtons
-            currPage={currPage}
-            lastPage={totalPages}
-            baseHref={`/tags/${tag}`}
-    />
+
+    <PostGridLayout title={`Posts tagged: ${tag}`} posts={page.data}/>
+    {totalPages > 1 && (
+            <PaginationButtons
+                    currPage={currPage}
+                    lastPage={totalPages}
+                    baseHref={`/tags/${tag}`}
+            />)}
 </BaseLayout>

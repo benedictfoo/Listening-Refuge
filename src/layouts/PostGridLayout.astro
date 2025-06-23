@@ -3,6 +3,7 @@ import {Image} from "astro:assets";
 import FormattedDate from "../components/FormattedDate.astro";
 import PostExcerpt from '@igor.dvlpr/astro-post-excerpt'
 import type {CollectionEntry} from "astro:content";
+import {POSTS_PER_PAGE} from "../consts";
 
 type Post = CollectionEntry<'blog'>
 
@@ -14,11 +15,11 @@ const {posts, title} = Astro.props;
 
 <div class="px-3">
     {title && (
-            <div class={`${posts.length < 3 && 'mx-auto sm:w-[33vw]'}`}>
+            <div }>
 
-                <h1 class="text-4xl font-black ">{title}</h1>
+                <h1 class={`${posts.length < POSTS_PER_PAGE && 'max-w-[50vw] mx-auto'} text-4xl font-black `}>{title}</h1>
             </div>)}
-    <ul class={`list-none py-3 ${posts.length < 2 ? 'mx-auto sm:w-[33vw]' : 'sm:grid sm:grid-cols-3'} sm:gap-3`}>
+    <ul class={`list-none py-3 ${posts.length < POSTS_PER_PAGE ? 'max-w-[50vw] mx-auto' : 'sm:grid sm:grid-cols-3'} sm:gap-3`}>
         {posts.map((post: Post) => (
                 <li class="py-3 md:col-span-1 ">
                     <a href={`/blog/${post.id}/`}>
