@@ -22,7 +22,7 @@ const {posts, title} = Astro.props;
     <ul class="list-none py-3 sm:grid sm:grid-cols-3 sm:gap-3">
         {posts.map((post, i) => (
                 <li class="py-3 md:col-span-1 ">
-                    <a href={`/blog/${post.id}/`}>
+                    <a href={`/${post.id}/`}>
                         {post.data.heroImage && (
 
                                 <Image
@@ -40,7 +40,7 @@ const {posts, title} = Astro.props;
                     <div class="py-3 px-1">
 
 
-                        <a href={`/blog/${post.id}/`}>
+                        <a href={`/${post.id}/`}>
                             <h4 class="text-xl font-semibold">{post.data.title}</h4>
                             <p class="font-medium ">
                                 <FormattedDate date={post.data.pubDate}/>
