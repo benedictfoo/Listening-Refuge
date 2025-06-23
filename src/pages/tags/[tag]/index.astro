@@ -1,36 +1,42 @@
 ---
-import PostGridLayout from "../../../layouts/PostGridLayout.astro";
+// src/pages/tags/[tag]/index.astro
+
+import {getCollection} from 'astro:content';
+import PostGridLayout from '../../../layouts/PostGridLayout.astro';
+import PaginationButtons from '../../../components/PaginationButtons.astro';
 import BaseLayout from "../../../layouts/BaseLayout.astro";
-import {getBlogPosts} from "../../../lib/content";
-import {POSTS_PER_PAGE} from "../../../consts";
-import PaginationButtons from "../../../components/PaginationButtons.astro";
+import Prose from "../../../components/Prose.astro";
+
 export async function getStaticPaths() {
-    const allPosts = await getBlogPosts();
-    const uniqueTags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
-
-    return uniqueTags.map((tag) => {
-        const filteredPosts = allPosts.filter((post) =>
-            post.data.tags.includes(tag)
-        ).sort(
-            (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-        );
-        return {
-            params: {tag},
-            props: {posts: filteredPosts},
-        };
-    });
-
+    const all = await getCollection('blog');
+    const tags = Array.from(new Set(all.flatMap(p => p.data.tags)));
+    return tags.map(tag => ({params: {tag}}));
 }
-const {posts} = Astro.props;
-const {tag} = Astro.params
 
+const POSTS_PER_PAGE = 1;
+const {tag} = Astro.params;
 
-const firstPagePosts = posts.slice(0, POSTS_PER_PAGE);
-const lastPage = Math.ceil(posts.length / POSTS_PER_PAGE)
-const currPage = 1
+const all = await getCollection('blog');
+const filtered = all
+    .filter(p => p.data.tags.includes(tag))
+    .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const page1 = filtered.slice(0, POSTS_PER_PAGE);
+const totalPages = Math.ceil(filtered.length / POSTS_PER_PAGE);
 ---
 
 <BaseLayout>
-    <PostGridLayout posts={firstPagePosts} title={`Posts tagged with: ${tag}`}/>
-</BaseLayout>
 
+    <Prose>
+        <h1 class="mx-auto sm:w-[33vw] ">{`Posts tagged: ${tag}`}</h1>
+    </Prose>
+
+    <PostGridLayout posts={page1}/>
+    {totalPages > 1 && (
+            <PaginationButtons
+                    currPage={1}
+                    lastPage={totalPages}
+                    baseHref={`/tags/${tag}`}
+            />
+    )}
+</BaseLayout>

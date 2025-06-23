@@ -1,0 +1,57 @@
+---
+// src/pages/tags/[tag]/page/[page].astro
+
+import {getCollection, type CollectionEntry} from 'astro:content';
+
+import PostGridLayout from '../../../layouts/PostGridLayout.astro';
+import PaginationButtons from '../../../components/PaginationButtons.astro';
+
+import {POSTS_PER_PAGE} from "../../../consts";
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import Prose from "../../../components/Prose.astro";
+
+export async function getStaticPaths({paginate}) {
+    const all = await getCollection('blog');
+
+    // Group posts by tag
+    const groups = all.reduce<Record<string, CollectionEntry<'blog'>[]>>((acc, post) => {
+        post.data.tags.forEach(t => (acc[t] ||= []).push(post));
+        return acc;
+    }, {});
+
+    return Object.entries(groups).flatMap(([tag, posts]) => {
+        const sorted = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+        const sliced = sorted.slice(POSTS_PER_PAGE);
+
+        return paginate(sliced, {
+            pageSize: POSTS_PER_PAGE,
+            params: {tag},
+        }).map((pageObj, idx) => ({
+            ...pageObj,
+            // idx = 0 => page 2, idx = 1 => page 3, etc.
+            params: {tag, page: String(idx + 2)},
+        }));
+    });
+}
+
+const {page} = Astro.props as {
+    page: { data: CollectionEntry<'blog'>[]; currentPage: number; lastPage: number };
+    tag: string;
+};
+const {tag} = Astro.params;
+
+const currPage = page.currentPage + 1;
+const totalPages = page.lastPage;
+---
+
+<BaseLayout>
+    <Prose>
+        <h1 class="mx-auto sm:w-[33vw] ">{`Posts tagged: ${tag}`}</h1>
+    </Prose>
+    <PostGridLayout posts={page.data}/>
+    <PaginationButtons
+            currPage={currPage}
+            lastPage={totalPages}
+            baseHref={`/tags/${tag}`}
+    />
+</BaseLayout>
