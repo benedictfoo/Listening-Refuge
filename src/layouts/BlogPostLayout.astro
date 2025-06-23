@@ -4,6 +4,7 @@ import FormattedDate from '../components/FormattedDate.astro';
 
 import {Image} from 'astro:assets'
 import Prose from "../components/Prose.astro";
+import Button from "../components/Button.astro";
 
 
 
@@ -50,9 +51,8 @@ const {
 
             <p class="flex flex-wrap gap-2">
                 {tags?.map((tag: any) =>
-                        <button class="px-3 py-2 rounded-md bg-emerald-300 border-black"><a class="no-underline"
-                                                                                            href={`/tags/${tag}/`}>{tag}</a>
-                        </button>)}
+                        <Button href={`/tags/${tag}/`} text={tag}/>)
+                }
             </p>
 
             <hr/>

@@ -6,6 +6,7 @@ import Prose from "../components/Prose.astro";
 import {Image} from "astro:assets";
 import PostExcerpt from "@igor.dvlpr/astro-post-excerpt";
 import FormattedDate from "../components/FormattedDate.astro";
+import Button from "../components/Button.astro";
 
 const posts = (await getCollection('blog')).sort(
     (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
@@ -54,11 +55,8 @@ const post = posts[0]
                 </a>
             </div>
         </article>
-        <button class="px-3 list-none py-2 rounded-md bg-sky-600 inline">
-            <a
-
-                    class="text-stone-50 no-underline transition duration-150  block active:scale-95 border-b-2 border-b-transparent active:border-b-2 hover:border-b-stone-50 "
-                    href={`/blog`}>Explore more Posts</a></button>
+        <Button href='/blog' text="Explore more Posts"/>
+        
     </Prose>
 
 </BaseLayout>
