@@ -1,0 +1,18 @@
+---
+import Button from "./Button.astro";
+const {currPage, lastPage} = Astro.props
+---
+
+<ul class="grid grid-cols-[repeat(3,1fr)] mx-auto w-[33vw]  gap-4 ">
+    <li class="flex items-center justify-end">
+        {
+            currPage !== 1 &&
+                <Button text="&#8592" href={`/blog/${currPage - 1}`}/>}
+    </li>
+    <li class="flex items-center justify-center "><p>You are on page <strong>{currPage}</strong></p></li>
+    <li class="flex items-center">
+        {
+            currPage !== lastPage &&
+                <Button text="&#8594" href={`/blog/${currPage + 1}`}/>}
+    </li>
+</ul>

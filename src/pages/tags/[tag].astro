@@ -3,8 +3,9 @@ import TagLayout from '../../layouts/TagLayout.astro'
 import {getCollection} from "astro:content";
 import PostGridLayout from "../../layouts/PostGridLayout.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import {getBlogPosts} from "../../lib/content";
 export async function getStaticPaths() {
-    const allPosts = await getCollection("blog");
+    const allPosts = await getBlogPosts();
     const uniqueTags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
 
     return uniqueTags.map((tag) => {

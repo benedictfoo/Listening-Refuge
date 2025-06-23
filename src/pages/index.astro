@@ -6,8 +6,9 @@ import {Image} from "astro:assets";
 import PostExcerpt from "@igor.dvlpr/astro-post-excerpt";
 import FormattedDate from "../components/FormattedDate.astro";
 import Button from "../components/Button.astro";
+import {getBlogPosts} from "../lib/content";
 
-const posts = (await getCollection('blog')).sort(
+const posts = (await getBlogPosts()).sort(
     (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 const post = posts[0]

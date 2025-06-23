@@ -4,6 +4,6 @@ import fallbackOGIMage from '../public/favicon/android-chrome-512x512.png'
 
 export const SITE_TITLE = 'Listening Refuge';
 export const SITE_DESCRIPTION = "Sharing uplifting And calming songs, one at a time."
-
+export const POSTS_PER_PAGE = 1
 
 export const FALLBACK_OG_IMAGE = fallbackOGIMage

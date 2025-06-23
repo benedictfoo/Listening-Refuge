@@ -13,8 +13,11 @@ const {posts, title} = Astro.props;
 
 
 <div class="px-3">
-    {title && (<h1 class="text-4xl font-black ">{title}</h1>)}
+    {title && (
+            <div class={`${posts.length < 3 && 'mx-auto w-[33vw]'}`}>
 
+                <h1 class="text-4xl font-black ">{title}</h1>
+            </div>)}
     <ul class={`list-none py-3 ${posts.length < 2 ? 'mx-auto w-[33vw]' : 'sm:grid sm:grid-cols-3'} sm:gap-3`}>
         {posts.map((post: Post) => (
                 <li class="py-3 md:col-span-1 ">
