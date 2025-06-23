@@ -1,0 +1,16 @@
+---
+import {getCollection, type CollectionEntry} from 'astro:content';
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PostGridLayout from "../../layouts/PostGridLayout.astro";
+
+
+export async function getStaticPaths({paginate}: { paginate: any }) {
+    const posts = await getCollection('blog');
+    return paginate(posts, {pageSize: 1});
+}
+
+const {page}: { page: { data: CollectionEntry<'blog'>[]; currentPage: number; } } = Astro.props;
+---
+<BaseLayout>
+    <PostGridLayout posts={page.data}/>
+</BaseLayout>

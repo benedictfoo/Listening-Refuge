@@ -1,6 +1,5 @@
 ---
 import {getCollection} from "astro:content";
-import PostGridLayout from "../layouts/PostGridLayout.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Prose from "../components/Prose.astro";
 import {Image} from "astro:assets";
@@ -56,7 +55,7 @@ const post = posts[0]
             </div>
         </article>
         <Button href='/blog' text="Explore more Posts"/>
-        
+
     </Prose>
 
 </BaseLayout>

@@ -5,11 +5,7 @@ import PostExcerpt from '@igor.dvlpr/astro-post-excerpt'
 import type {CollectionEntry} from "astro:content";
 
 type Post = CollectionEntry<'blog'>
-interface Props {
-    posts: Post[];
-    title?: string
 
-}
 
 
 const {posts, title} = Astro.props;
@@ -19,8 +15,8 @@ const {posts, title} = Astro.props;
 <div class="px-3">
     {title && (<h1 class="text-4xl font-black ">{title}</h1>)}
 
-    <ul class="list-none py-3 sm:grid sm:grid-cols-3 sm:gap-3">
-        {posts.map((post, i) => (
+    <ul class={`list-none py-3 ${posts.length < 3 ? 'mx-auto prose' : 'sm:grid sm:grid-cols-3'} sm:gap-3`}>
+        {posts.map((post: Post) => (
                 <li class="py-3 md:col-span-1 ">
                     <a href={`/blog/${post.id}/`}>
                         {post.data.heroImage && (
@@ -40,7 +36,7 @@ const {posts, title} = Astro.props;
                     <div class="py-3 px-1">
 
 
-                        <a href={`/blog/${post.id}/`}>
+                        <a class="no-underline" href={`/blog/${post.id}/`}>
                             <h2 class="text-xl font-semibold">{post.data.title}</h2>
                             <p class="font-medium ">
                                 <FormattedDate date={post.data.pubDate}/>
