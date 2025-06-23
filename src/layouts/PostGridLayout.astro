@@ -15,7 +15,7 @@ const {posts, title} = Astro.props;
 <div class="px-3">
     {title && (<h1 class="text-4xl font-black ">{title}</h1>)}
 
-    <ul class={`list-none py-3 ${posts.length < 3 ? 'mx-auto prose' : 'sm:grid sm:grid-cols-3'} sm:gap-3`}>
+    <ul class={`list-none py-3 ${posts.length < 2 ? 'mx-auto w-[33vw]' : 'sm:grid sm:grid-cols-3'} sm:gap-3`}>
         {posts.map((post: Post) => (
                 <li class="py-3 md:col-span-1 ">
                     <a href={`/blog/${post.id}/`}>
