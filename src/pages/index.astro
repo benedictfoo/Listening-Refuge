@@ -3,6 +3,9 @@ import {getCollection} from "astro:content";
 import PostGridLayout from "../layouts/PostGridLayout.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Prose from "../components/Prose.astro";
+import {Image} from "astro:assets";
+import PostExcerpt from "@igor.dvlpr/astro-post-excerpt";
+import FormattedDate from "../components/FormattedDate.astro";
 
 const posts = (await getCollection('blog')).sort(
     (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
@@ -11,7 +14,7 @@ const post = posts[0]
 ---
 
 <BaseLayout>
-    <Prose>
+    <Prose class="px-4 pb-3">
         <h1>Welcome to my Listening Refuge</h1>
 
         <p>Music comforts me when I feel down, motivates me when I feel lazy, grounds me when I feel shaken, stirs my
@@ -19,6 +22,37 @@ const post = posts[0]
         <p>I want to share with you songs like these. I hope you will enjoy them. 🥰</p>
 
         <h2>Here's My Newest Post</h2>
+
+
+        <a href={`/blog/${post.id}/`}>
+            {post.data.heroImage && (
+
+                    <Image
+                            class="w-full"
+                            widths={[400, 640, 800, 1280]}
+                            sizes="(max-width: 639px) 100vw, 33vw"
+
+                            src={post.data.heroImage}
+                            alt=""
+
+                    />
+            )}
+        </a>
+
+        <div class="py-3 px-1">
+
+
+            <a class="no-underline font-normal" href={`/blog/${post.id}/`}>
+                <h4 class="text-xl font-semibold">{post.data.title}</h4>
+                <p class="font-medium ">
+                    <FormattedDate date={post.data.pubDate}/>
+                </p>
+                <div class="py-3">
+                    <PostExcerpt post={post} smartEllipsis={true} maxLength={0}/>
+                </div>
+            </a>
+        </div>
+
     </Prose>
 
 </BaseLayout>
