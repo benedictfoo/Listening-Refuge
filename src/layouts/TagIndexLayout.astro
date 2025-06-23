@@ -19,9 +19,9 @@ const uniqueTags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
             <ul class="flex flex-wrap gap-2 p-0">
                 {uniqueTags?.map((tag: any) =>
                         <li role="option"
-                            class="px-3 list-none py-2 rounded-md bg-green-400  ">
+                            class="px-3 list-none py-2 rounded-md bg-sky-600   ">
                             <a
-                                    class="no-underline transition duration-150  block active:scale-95 border-b-2 border-b-transparent active:border-b-2 hover:border-b-black "
+                                    class="text-stone-50 no-underline transition duration-150  block active:scale-95 border-b-2 border-b-transparent active:border-b-2 hover:border-b-stone-50 "
                                     href={`/tags/${tag}/`}>{tag}</a>
                         </li>)}
             </ul>
