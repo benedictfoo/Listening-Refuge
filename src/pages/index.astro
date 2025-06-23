@@ -2,12 +2,23 @@
 import {getCollection} from "astro:content";
 import PostGridLayout from "../layouts/PostGridLayout.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Prose from "../components/Prose.astro";
 
 const posts = (await getCollection('blog')).sort(
     (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
+const post = posts[0]
 ---
 
 <BaseLayout>
-    <PostGridLayout posts={posts}/>
+    <Prose>
+        <h1>Welcome to my Listening Refuge</h1>
+
+        <p>Music comforts me when I feel down, motivates me when I feel lazy, grounds me when I feel shaken, stirs my
+            courage when I face hardship, and adds to my joy and excitement during happy occasions.</p>
+        <p>I want to share with you songs like these. I hope you will enjoy them. 🥰</p>
+
+        <h2>Here's My Newest Post</h2>
+    </Prose>
+
 </BaseLayout>
