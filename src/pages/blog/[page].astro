@@ -1,5 +1,4 @@
 ---
-import {getCollection, type CollectionEntry} from 'astro:content';
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PostGridLayout from "../../layouts/PostGridLayout.astro";
 import {getBlogPosts} from "../../lib/content";
@@ -22,7 +21,7 @@ const {page} = Astro.props;
 const realCurrentPage = page.currentPage + 1;
 const totalPages = Math.ceil((await getBlogPosts()).length / POSTS_PER_PAGE);
 ---
-<BaseLayout>
+<BaseLayout title="Music Blog Posts" description="Explore Blog Posts on Music">
     <PostGridLayout posts={page.data}/>
     {totalPages > 1 && (
             <PaginationButtons baseHref={"/blog"} currPage={realCurrentPage} lastPage={totalPages}/>)}

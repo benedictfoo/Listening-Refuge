@@ -23,12 +23,14 @@ const filtered = all
 
 const page1 = filtered.slice(0, POSTS_PER_PAGE);
 const totalPages = Math.ceil(filtered.length / POSTS_PER_PAGE);
+const title = `Posts tagged: ${tag}`
+const description = `Find relevant posts on a topic here`
 ---
 
-<BaseLayout>
+<BaseLayout title={title} description={description}>
 
 
-    <PostGridLayout posts={page1} title={`Posts tagged: ${tag}`}/>
+    <PostGridLayout posts={page1} title={title}/>
     {totalPages > 1 && (
             <PaginationButtons
                     currPage={1}

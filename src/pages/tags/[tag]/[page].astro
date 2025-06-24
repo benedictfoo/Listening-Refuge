@@ -42,11 +42,13 @@ const {tag} = Astro.params;
 
 const currPage = page.currentPage + 1;
 const totalPages = page.lastPage;
+const title = `Posts tagged: ${tag}`
+const description = `Find relevant posts on a topic here`
 ---
 
-<BaseLayout>
+<BaseLayout title={title} description={description}>
 
-    <PostGridLayout title={`Posts tagged: ${tag}`} posts={page.data}/>
+    <PostGridLayout title={title} posts={page.data}/>
     {totalPages > 1 && (
             <PaginationButtons
                     currPage={currPage}

@@ -1,6 +1,6 @@
 ---
 title: "The Avett Brothers — Ain't No Man"
-description: "A reflection on 'Ain't No Man', of The Avett Brothers’ 2016 album: True Sadness."
+description: "The Avett Brothers — Ain't No Man | A song about Self-belief "
 pubDate: 'Jun 20 2025'
 heroImage: './the-avett-brothers-aint-no-man.jpg'
 youtubeId: "21ystqlD_Rk"
