@@ -15,11 +15,11 @@ const {posts, title} = Astro.props;
 
 <div class="px-3">
     {title && (
-            <div }>
+            <div class={`${posts.length < POSTS_PER_PAGE && 'max-w-[65ch] px-4 mx-auto'}`}>
 
-                <h1 class={`${posts.length < POSTS_PER_PAGE && 'max-w-[50vw] mx-auto'} text-4xl font-black `}>{title}</h1>
+                <h1 class={` text-4xl font-black `}>{title}</h1>
             </div>)}
-    <ul class={`list-none py-3 ${posts.length < POSTS_PER_PAGE ? 'max-w-[50vw] mx-auto' : 'sm:grid sm:grid-cols-3'} sm:gap-3`}>
+    <ul class={`list-none py-3 px-4 ${posts.length < POSTS_PER_PAGE ? 'max-w-[65ch] mx-auto' : 'sm:grid sm:grid-cols-3'} sm:gap-3`}>
         {posts.map((post: Post) => (
                 <li class="py-3 md:col-span-1 ">
                     <a href={`/blog/${post.id}/`}>
