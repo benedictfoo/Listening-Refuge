@@ -10,25 +10,26 @@ date: 2025-06-13
 
 ## Queen of Argyll
 
-*A cover of the Silly Wizard's, same-titled song, with some lyrics modified, by Siobhan Miller in her latest album in
-2022 – Bloom.*
+This is a cover of a Silly Wizard song by Siobhan Miller, with some lyrics modified, in her latest
+album Bloom.
 
 The narrator, awe-struck and eager with a zealous passion, felt compelled to share, joyfully with everyone, a lady of "
-character and feature", where no words could even barely manage to begin to describe her: the Queen of Argyll. This is
-reflected in the gentle, clean, melodic acoustic guitars, tight, energetic percussions, and bright, cheery, emotional
+character and feature", so remarkable that no words could even begin to describe her: the Queen of Argyll. This is
+reflected in the gentle, clean, melodic acoustic guitars, tight, energetic percussion, and bright, cheery, emotional
 piano chords.
 
-He only has total respect and admiration for her. Her gracefulness and beauty, like a swan; her smile captivating and
+He has total respect and admiration for her. She was special in his eyes - her gracefulness and beauty, like a swan; her
+smile captivating, warm and
 genuine. Even the roses in the garden have to bow to her.
 
-The whole of Argyll with its rich, large, and diverse population does not have anyone that could match her splendor.  
-The fiddle solo, rather celebratory, fully brought forward the grandiosity and marvel fitting for her and her only.
+No one in the whole of Argyll with its rich, large, and diverse population could match her splendor.  
+The fiddle solo comes back to celebrate the marvel only found in her.
 
-Filled with genuine love and admiration for her, the narrator must leave the listeners and go find a way to court and
-love her, respectfully and honorably. The song concludes here with a satisfying ending, with the fiddle melody again,
+“The narrator left it to the listeners to find a respectful, honorable way to court her. The song concludes here with a
+satisfying end, with the fiddle melody again,
 but more subtle, and the same percussive drums and some cymbals.
 
-It is rather inspiring that one could be passionate about someone he has just met with such vigor. It evokes in me a
+It is rather inspiring that one could be passionate about someone they have just met with such vigor. It evokes in me a
 sense of admiration for the narrator – he is such a gentleman and has a genuine and sincere love for her. He is
 determined to win her over and love her with honor and respect.
 
