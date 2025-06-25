@@ -26,7 +26,7 @@ export async function getStaticPaths({paginate}) {
         return paginate(sliced, {
             pageSize: POSTS_PER_PAGE,
             params: {tag},
-        }).map((pageObj, idx) => ({
+        }).slice(1).map((pageObj, idx) => ({
             ...pageObj,
             // idx = 0 => page 2, idx = 1 => page 3, etc.
             params: {tag, page: String(idx + 2)},

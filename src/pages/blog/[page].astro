@@ -8,10 +8,10 @@ import PaginationButtons from "../../components/PaginationButtons.astro";
 export async function getStaticPaths({paginate}: { paginate: any }) {
     const posts = (await getBlogPosts()).sort(
         (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-    ).slice(POSTS_PER_PAGE)
+    )
 
     const paginated = await paginate(posts, {pageSize: POSTS_PER_PAGE});
-    return paginated.map((pageObj, idx) => ({
+    return paginated.slice(1).map((pageObj, idx) => ({
         ...pageObj,
         params: {page: String(idx + 2)}
     }));
