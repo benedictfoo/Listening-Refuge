@@ -1,6 +1,6 @@
 ---
-title: "Siobhan Miller — Queen of Argyll"
-description: "Siobhan Miller — Queen of Argyll | A song about Passion and Love"
+title: "Siobhan Miller—Queen of Argyll"
+description: "Siobhan Miller—Queen of Argyll | A song about Passion and Love"
 pubDate: 'Jun 13 2025'
 heroImage: './siobhan-miller-queenofargyll.jpg'
 youtubeId: '7j8YZF0xZ3A'
@@ -33,7 +33,7 @@ It is rather inspiring that one could be passionate about someone they have just
 sense of admiration for the narrator – he is such a gentleman and has a genuine and sincere love for her. He is
 determined to win her over and love her with honor and respect.
 
-I really enjoyed this song. Siobhan Miller's cover was genuine and passionate – I rooted for the narrator and could
+I really enjoyed this song. Siobhan Miller's cover was genuine and passionate — I rooted for the narrator and could
 sense his passion and admiration for the Queen through the lyrics, instrumentation and vocals. I hope one day I can
 develop such sincere feelings for someone, for something, or for some calling. Hope you enjoyed today's post as much as
 I enjoyed deeply dwelling on and absorbing this song.
