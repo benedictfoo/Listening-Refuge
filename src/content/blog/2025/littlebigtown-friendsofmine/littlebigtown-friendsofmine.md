@@ -35,7 +35,7 @@ vocal harmonies, light guitars, and soft, gentle drums.
 
 This then leads to the concluding guitar solo, tender and emotional. The singer sends the song with
 the line from the chorus: *"I see your cup
-filled with kindness, raise you a glass full of wine. Take courage, friends of mine".
+filled with kindness, raise you a glass full of wine. Take courage, friends of mine"*.
 
 This song reminds me of the importance of having a strong circle, not necessarily friends but perhaps family too. We all
 need
