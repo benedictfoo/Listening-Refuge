@@ -23,14 +23,18 @@ export async function getStaticPaths({paginate}) {
         const sorted = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
         const sliced = sorted.slice(POSTS_PER_PAGE);
 
-        return paginate(sliced, {
+        const paginated = paginate(sorted, {
             pageSize: POSTS_PER_PAGE,
             params: {tag},
-        }).slice(1).map((pageObj, idx) => ({
-            ...pageObj,
-            // idx = 0 => page 2, idx = 1 => page 3, etc.
-            params: {tag, page: String(idx + 2)},
-        }));
+        });
+
+        return paginated
+            .slice(1)
+            .map((pageObj, idx) => ({
+                ...pageObj,
+                params: {tag, page: String(idx + 2)},
+            }));
+
     });
 }
 
@@ -40,7 +44,7 @@ const {page} = Astro.props as {
 };
 const {tag} = Astro.params;
 
-const currPage = page.currentPage + 1;
+const currPage = page.currentPage;
 const totalPages = page.lastPage;
 const title = `Posts tagged: ${tag}`
 const description = `Find relevant posts on a topic here`

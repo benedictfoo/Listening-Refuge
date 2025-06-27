@@ -5,10 +5,10 @@ pubDate: 'Jun 25 2025'
 heroImage: './littlebigtown-friendsofmine.jpg'
 youtubeId: 'X4cOpmkq0NU'
 tags: [ "country" ]
-date: 2025-06-13
+
 ---
 
-## Friends Of Mine
+## Little Big Town—Friends Of Mine
 
 This song feels like a message of encouragement for friends in need. The
 slow-tempo, soft piano, and gentle, steady singing

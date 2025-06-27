@@ -4,11 +4,10 @@ description: "The Avett Brothers—Ain't No Man | A song about Self-belief "
 pubDate: 'Jun 20 2025'
 heroImage: './the-avett-brothers-aint-no-man.jpg'
 youtubeId: "21ystqlD_Rk"
-tags: [ "folk music" ]
-date: "2025-06-14"
+tags: [ "folk" ]
 ---
 
-## Ain't No Man
+## The Avett Brothers—Ain't No Man
 
 The intro's catchy bass line with percussion and clapping caught my attention. However, I almost stopped listening to
 the song
