@@ -15,7 +15,7 @@ const {
     pubDate,
     updatedDate,
     youtubeId,
-    heroImage, tags
+    heroImage, emotions
 } = Astro.props;
 ---
 
@@ -50,8 +50,8 @@ const {
             }
 
             <p class="flex flex-wrap gap-2">
-                {tags?.map((tag: any) =>
-                        <Button href={`/tags/${tag}/`} text={tag}/>)
+                {emotions?.map((emotion: any) =>
+                        <Button href={`/emotions/${emotion}/`} text={emotion}/>)
                 }
             </p>
 

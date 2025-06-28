@@ -1,5 +1,5 @@
 ---
-// src/pages/tags/[tag]/page/[page].astro
+// src/pages/emotions/[emotion]/page/[page].astro
 
 import {getCollection, type CollectionEntry} from 'astro:content';
 
@@ -13,26 +13,26 @@ import BaseLayout from "../../../layouts/BaseLayout.astro";
 export async function getStaticPaths({paginate}) {
     const all = await getCollection('blog');
 
-    // Group posts by tag
+    // Group posts by emotion
     const groups = all.reduce<Record<string, CollectionEntry<'blog'>[]>>((acc, post) => {
-        post.data.tags.forEach(t => (acc[t] ||= []).push(post));
+        post.data.emotions.forEach(t => (acc[t] ||= []).push(post));
         return acc;
     }, {});
 
-    return Object.entries(groups).flatMap(([tag, posts]) => {
+    return Object.entries(groups).flatMap(([emotion, posts]) => {
         const sorted = posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
         const sliced = sorted.slice(POSTS_PER_PAGE);
 
         const paginated = paginate(sorted, {
             pageSize: POSTS_PER_PAGE,
-            params: {tag},
+            params: {emotion},
         });
 
         return paginated
             .slice(1)
             .map((pageObj, idx) => ({
                 ...pageObj,
-                params: {tag, page: String(idx + 2)},
+                params: {emotion, page: String(idx + 2)},
             }));
 
     });
@@ -40,14 +40,14 @@ export async function getStaticPaths({paginate}) {
 
 const {page} = Astro.props as {
     page: { data: CollectionEntry<'blog'>[]; currentPage: number; lastPage: number };
-    tag: string;
+    emotion: string;
 };
-const {tag} = Astro.params;
+const {emotion} = Astro.params;
 
 const currPage = page.currentPage;
 const totalPages = page.lastPage;
-const title = `Posts tagged: ${tag}`
-const description = `Find relevant posts on a topic here`
+const title = `Songs that evoke: ${emotion}`
+const description = `Find a song which fits a particular emotion`
 ---
 
 <BaseLayout title={title} description={description}>
@@ -57,6 +57,6 @@ const description = `Find relevant posts on a topic here`
             <PaginationButtons
                     currPage={currPage}
                     lastPage={totalPages}
-                    baseHref={`/tags/${tag}`}
+                    baseHref={`/emotions/${emotion}`}
             />)}
 </BaseLayout>

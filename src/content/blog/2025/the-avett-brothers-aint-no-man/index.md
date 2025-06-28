@@ -4,7 +4,7 @@ description: "The Avett Brothers—Ain't No Man | A song about Self-belief "
 pubDate: 'Jun 20 2025'
 heroImage: './the-avett-brothers-aint-no-man.jpg'
 youtubeId: "21ystqlD_Rk"
-tags: [ "folk" ]
+emotions: [ "folk" ]
 ---
 
 ## The Avett Brothers—Ain't No Man

@@ -1,5 +1,5 @@
 ---
-// src/pages/tags/[tag]/index.astro
+// src/pages/emotions/[emotion]/index.astro
 
 import {getCollection} from 'astro:content';
 import PostGridLayout from '../../../layouts/PostGridLayout.astro';
@@ -9,22 +9,22 @@ import {POSTS_PER_PAGE} from "../../../consts";
 
 export async function getStaticPaths() {
     const all = await getCollection('blog');
-    const tags = Array.from(new Set(all.flatMap(p => p.data.tags)));
-    return tags.map(tag => ({params: {tag}}));
+    const emotions = Array.from(new Set(all.flatMap(p => p.data.emotions)));
+    return emotions.map(emotion => ({params: {emotion}}));
 }
 
 
-const {tag} = Astro.params;
+const {emotion} = Astro.params;
 
 const all = await getCollection('blog');
 const filtered = all
-    .filter(p => p.data.tags.includes(tag))
+    .filter(p => p.data.emotions.includes(emotion))
     .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 const page1 = filtered.slice(0, POSTS_PER_PAGE);
 const totalPages = Math.ceil(filtered.length / POSTS_PER_PAGE);
-const title = `Posts tagged: ${tag}`
-const description = `Find relevant posts on a topic here`
+const title = `Songs that evoke: ${emotion}`
+const description = `Find a song which fits a particular emotion`
 ---
 
 <BaseLayout title={title} description={description}>
@@ -35,7 +35,7 @@ const description = `Find relevant posts on a topic here`
             <PaginationButtons
                     currPage={1}
                     lastPage={totalPages}
-                    baseHref={`/tags/${tag}`}
+                    baseHref={`/emotions/${emotion}`}
             />
     )}
 </BaseLayout>
