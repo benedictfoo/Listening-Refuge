@@ -4,7 +4,12 @@ description: "Kings of Convenience—Rocky Trail | Be vocal about how you feel"
 pubDate: 'Jun 27 2025'
 heroImage: './kingsofconvenience-rockytrail.jpg'
 youtubeId: 'zUhQ1W1YYJI'
-emotions: [ "indie", "folk" ]
+emotions: [
+  "calm",
+  "regret",
+  "compassion",
+  "love"
+]
 ---
 
 ## Kings of Convenience—Rocky Trail

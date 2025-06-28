@@ -10,6 +10,7 @@ emotions: [
   "awe",
   "hope",
   "joy",
+  "love"
 ]
 
 ---
