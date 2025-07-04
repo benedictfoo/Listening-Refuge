@@ -21,16 +21,16 @@ const post = posts[0]
         <p>Music comforts me when I feel down, motivates me when I feel lazy, grounds me when I feel shaken, stirs my
             courage when I face hardship, and adds to my joy and excitement during happy occasions.</p>
         <p>I want to share with you music like these. I hope you will enjoy them. 🥰</p>
-
-        <h2>Here's My Newest Post</h2>
-
-
-        <article>
+        <hr class="my-8 border-t border-gray-200"/>
+    </Prose>
+    <div class="px-4">
+        <h2 class="font-bold text-3xl ">Here's My Newest Post</h2>
+        <article class="pb-3">
             <a href={`/blog/${post.id}/`}>
                 {post.data.heroImage && (
 
                         <Image
-                                class="w-full"
+                                class="w-full mt-6 mb-4"
                                 widths={[400, 640, 800, 1280]}
                                 sizes="(max-width: 639px) 100vw, 640px"
 
@@ -41,22 +41,20 @@ const post = posts[0]
                 )}
             </a>
 
-            <div class="py-3 px-1">
+            <div class="pb-3 px-1">
 
 
-                <a class="no-underline font-normal" href={`/blog/${post.id}/`}>
-                    <h3 class="text-xl font-semibold">{post.data.title}</h3>
-                    <p class="font-medium ">
-                        <FormattedDate date={post.data.pubDate}/>
-                    </p>
-                    <div class="py-3">
-                        <PostExcerpt post={post} smartEllipsis={true} maxLength={0}/>
-                    </div>
-                </a>
+                <h3 class="text-xl font-semibold">{post.data.title}</h3>
+                <p class="font-medium ">
+                    <FormattedDate date={post.data.pubDate}/>
+                </p>
+                <div class="py-3">
+                    <PostExcerpt post={post} smartEllipsis={true} maxLength={200}/>
+                </div>
+                <a class="no-underline text-lime-600 font-bold" href={`/blog/${post.id}/`}>Read More</a>
             </div>
         </article>
         <Button href='/blog' text="Explore more Posts"/>
-
-    </Prose>
+    </div>
 
 </BaseLayout>
