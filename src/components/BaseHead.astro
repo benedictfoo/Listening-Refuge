@@ -11,7 +11,7 @@ interface Props {
     description: string;
     image?: ImageMetadata;
 }
-const {title, description, image = FALLBACK_OG_IMAGE} = Astro.props as Props;
+const {title, description, image} = Astro.props as Props;
 const formattedTitle = title === SITE_TITLE ? SITE_TITLE : `${title} | ${SITE_TITLE}`
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
@@ -49,11 +49,11 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 <meta property="og:url" content={Astro.url}/>
 <meta property="og:title" content={formattedTitle}/>
 <meta property="og:description" content={description}/>
-<meta property="og:image" content={new URL(image.src, Astro.url)}/>
+<meta property="og:image" content={image && new URL(image.src, Astro.url)}/>
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image"/>
 <meta property="twitter:url" content={Astro.url}/>
 <meta property="twitter:title" content={formattedTitle}/>
 <meta property="twitter:description" content={description}/>
-<meta property="twitter:image" content={new URL(image.src, Astro.url)}/>
+<meta property="twitter:image" content={image && new URL(image.src, Astro.url)}/>
