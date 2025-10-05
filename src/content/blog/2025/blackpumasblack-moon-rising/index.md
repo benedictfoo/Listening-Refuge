@@ -11,29 +11,32 @@ emotions: [
 
 ## Black Pumas—Black Moon Rising
 
-This is a memorable song I heard during my journey of mental and emotional recovery. It is one of the few songs that
-have stuck with me over the past few years.
+This song is quite memorable to me. I heard it during my journey of mental and emotional recovery. However, the song
+means something different now than it did before.
 
-The song starts with a drum fill- it sounds like one of those Looney Tunes or Tom and Jerry sound effects. I am not sure
-what it is; it made me chuckle a bit and also caught my attention. Swiftly enters a slower, steadier soundscape of
+The song starts with a drum fill- it sounds like one of those Looney Tunes or Tom and Jerry sound effects. Then, swiftly
+enters a slower, steadier soundscape of
 tight, steady drums and soulful,
-conviction-filled vocals, laid-back electric guitar, and keyboard. The song then progresses with a repeating melodic
+conviction-filled vocals, laid-back electric guitar, and clean melodic keyboard lines. The song then progresses with a
+repeating melodic
 string synth hook that sounds pleasant and, interestingly, tastefully retro. Together, the song as a whole evokes a
 haunting, sombre atmosphere of passion and desire.
 
-The song to me seems to be about a woman dressed in black who represents the object of the man's desire. She appears to
-come back from the dead once every black moon, around every 100 years. Isn’t that rather creepy? What good could come
-from meeting with such a person? The woman eventually breaks his heart. I assume she leaves after the black moon, so it
-seems pointless to dedicate so much time to fleeting desires. But the man is so lost in his desires that he cannot think
-badly of the situation he landed in. The man seems to be in a limbo, and just consumed with desire, with nothing else to
-do
+The song seems to be about a woman dressed in black who rises from the dead once every black moon, around every hundred
+years. The man is obsessed with this woman and wants to be with her.
+Is it wise to chase after such a person who appears only in such an unholy night? Is she even a person?
+
+The man eagerly waits for the woman's appearance at any moment now. He is filled with ecstasy when she arrives. He
+enjoys every moment around her, even as the song quietly fades away. Does the man fade away with the song, or is he
+cursed to stay like this forever? Hopefully, the woman will disappear, and the man can continue with his life.
 
 Years ago, when I first listened to it, I could relate to having strong desires for things-that was what drew me into
-the song back then.
+the song back then. It is exhilarating to chase after things that are unknown, mysterious, and full of boundless
+possibilities.
 
-However, recently this song felt different. It makes me feel sad because it reminds me of succumbing to desire, wasting
-so much precious time. It is really foolish, and I need to remind myself not to focus on things that bring fleeting
-moments of good that won’t last and will bring us to ruin.
+However, recently this song felt different. It makes me feel sad because it reminds me of my past. I was walking down
+paths with no destination, chasing the wrong things. I turned my life around when I let go of the wrong motivations and
+focused on my growth as a better person.
 
-I would like to conclude with an interesting analogy I have heard recently. Our desires are like fire. If we succumb to
-it, through our actions or thoughts, it is as if we are pouring gasoline onto the flame, and we will get burned.
+Our desires are like a fire inside us. If we give in to harmful desires, it is as if we are pouring gasoline onto the
+flame, and we will get burned.
