@@ -39,4 +39,4 @@ paths with no destination, chasing the wrong things. I turned my life around whe
 focused on my growth as a better person.
 
 Our desires are like a fire inside us. If we give in to harmful desires, it is as if we are pouring gasoline onto the
-flame, and we will get burned.
+flame, and we will get burned. This song is a reminder to not be swayed by wrong desires.
