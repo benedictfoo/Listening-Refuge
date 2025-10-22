@@ -9,6 +9,7 @@ emotions: [
   "compassion",
   "encouragement",
   "love",
+  "calm"
 ]
 
 ---
