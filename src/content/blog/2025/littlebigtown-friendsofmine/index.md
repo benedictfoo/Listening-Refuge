@@ -2,6 +2,7 @@
 title: "Little Big Town—Friends Of Mine"
 description: "Little Big Town—Friends Of Mine | Friends are important"
 pubDate: 'Jun 25 2025'
+updatedDate: 'Oct 23 2025'
 heroImage: './littlebigtown-friendsofmine.jpg'
 youtubeId: 'X4cOpmkq0NU'
 emotions: [
