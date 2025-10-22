@@ -14,7 +14,7 @@ emotions: [
 This song is quite memorable to me. I heard it during my journey of mental and emotional recovery. However, the song
 means something different now than it did before.
 
-The song starts with a drum fill- it sounds like one of those Looney Tunes or Tom and Jerry sound effects. Then, swiftly
+The song starts with a drum fill: it sounds like one of those Looney Tunes or Tom and Jerry sound effects. Then, swiftly
 enters a slower, steadier soundscape of
 tight, steady drums and soulful,
 conviction-filled vocals, laid-back electric guitar, and clean melodic keyboard lines. The song then progresses with a

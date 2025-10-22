@@ -25,23 +25,23 @@ character and feature", so remarkable that no words could even begin to describe
 reflected in the gentle, clean, melodic acoustic guitars, tight, energetic percussion, and bright, cheery, emotional
 piano chords.
 
-He has total respect and admiration for her. She was special in his eyes - her gracefulness and beauty, like a swan; her
+He has total respect and admiration for her. She was special in his eyes: her gracefulness and beauty, like a swan; her
 smile captivating, warm and
 genuine. Even the roses in the garden have to bow to her.
 
 No one in the whole of Argyll with its rich, large, and diverse population could match her splendor.  
 The fiddle solo comes back to celebrate the marvel only found in her.
 
-“The narrator left it to the listeners to find a respectful, honorable way to court her. The song concludes here with a
-satisfying end, with the fiddle melody again,
-but more subtle, and the same percussive drums and some cymbals.
+The narrator left the listeners to find a respectful, honorable way to court her. The song concludes here with a
+satisfying end, with the fiddle melody playing subtly,
+and the same percussive drums and some cymbals.
 
 It is rather inspiring that one could be passionate about someone they have just met with such vigor. It evokes in me a
-sense of admiration for the narrator – he is such a gentleman and has a genuine and sincere love for her. He is
+sense of admiration for the narrator. He is such a gentleman and has a genuine and sincere love for her. He is
 determined to win her over and love her with honor and respect.
 
-I really enjoyed this song. Siobhan Miller's cover was genuine and passionate — I rooted for the narrator and could
+I really enjoyed this song. Siobhan Miller's cover was genuine and passionate. I rooted for the narrator and could
 sense his passion and admiration for the Queen through the lyrics, instrumentation and vocals. I hope one day I can
-develop such sincere feelings for someone, for something, or for some calling. Hope you enjoyed today's post as much as
+develop such sincere feelings for someone, or for something. Hope you enjoyed today's post as much as
 I enjoyed deeply dwelling on and absorbing this song.
 

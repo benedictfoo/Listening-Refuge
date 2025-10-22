@@ -12,41 +12,60 @@ emotions: [
 
 ---
 
-## Little Big Town—Friends Of Mine
+## Song Overview
 
-This song feels like a message of encouragement for friends in need. The
-slow-tempo, soft piano, and gentle, steady singing
-give ample breathing space for reflection and somber, empathetic mood.
+This song is an encouragement for those facing struggles or pain in life. The singer understands that sometimes life
+gets rather tough, making it hard for us to bear it all. Also, He seems to have written this song for a particular
+friend: one who has led a life of kindness. He urges them to stand tall and rise back up.
 
-In the first verse, the singer is aware of the suffering his friend is in and sings: *"keep your eyes on the horizon"*.
-He
-also understands that still, *"it gets hard to keep on rising"* sometimes.
+## Lyrics I love
 
-The emotional chorus, with soft vocal harmonies, acknowledges that everyone faces unexpected difficulties and undeserved
-hardships: *"the wind blows
-the rain in your eyes"*. But he also affirms his friends' worth and offers words of encouragement: *"I see your cup
-filled with kindness, raise you a glass full of wine. Take courage, friends of mine"*.
+> Everyone knows that in life sometimes
+>
+> The wind blows the rain in your eyes
+>
+> I see your cup filled with kindness
+>
+> Raise you a glass full of wine
+>
+> Take courage friends of mine
 
-The second verse with added vocal harmonies, deepens the emotional weight of the struggle we all face. It reminds us we
-should care for others because we understand how we would want our friends to do the same for us.
+This is the chorus. We all have had dull, depressing stuff in life, despite doing our best to do the right things. The
+singer encourages his friend to take courage.
 
-The second chorus adds a soulful guitar section to highlight the delicate, caring feelings for his friends.
+> It's a crazy world
+>
+> We're all trying to live in
+>
+> We all feel alone and afraid
 
-The bridge is especially touching, as the lyrics express how he stands by his friends. This is made even more impactful
-with
-the steady
-vocal harmonies, light guitars, and soft, gentle drums.
+The singer seems to encourage his friend by saying loneliness and fear are universal feelings. It is comforting to hear
+that we are all in this together.
 
-This then leads to the concluding guitar solo, tender and emotional. The singer sends the song with
-the line from the chorus: *"I see your cup
-filled with kindness, raise you a glass full of wine. Take courage, friends of mine"*.
+> Be in the moment
+>
+> Find the strength not to give in
+>
+>And we'll sail on to better days
 
-This song reminds me of the importance of having a strong circle, not necessarily friends but perhaps family too. We all
-need
-comfort and support sometimes, but it is equally important to care for friends around us.
+He offers advice for his friend to focus on now, and not give in to anything unhelpful. We will have better days ahead.
 
-It also made me think of times I added stress to my loved ones, when I feel unhappy and started to quarrel. I hope that
-you won't make the same mistake I made 😳. But I guess from today onwards, I can do better...
+## What I love about the music
 
-Take care, friends of mine.
+The song begins only with keyboards. The keyboard playing is warm and slow. It prepares me to sit back and relax.
+
+The singer’s vocals join shortly after. I can hear the singer’s sincerity and empathy for his friend, and it brings
+feelings of hope and courage to me.
+
+The drums, bass, and guitar only come after the first chorus. This makes the following lines more impactful than before.
+It particularly makes the next chorus sound more emotional and yet uplifting.
+
+The guitar solo near the end continues, making the song feel really touching, and brings the song to an end, where I
+felt at peace and rested.
+
+## Conclusion
+
+This song is really calming and helps me stay grounded. As I am writing this, it is midnight, and I feel like this song
+is perfect for times when I am just focusing on tasks and want something motivational and peaceful to listen to. I would
+like to be a source of comfort to my friends when the time arises.
 
