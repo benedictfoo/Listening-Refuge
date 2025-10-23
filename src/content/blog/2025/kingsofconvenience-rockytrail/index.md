@@ -91,9 +91,8 @@ What I love about the music
 ---------------------------
 
 I like that the intro of the song starts without vocals. It begins with violins, percussion, and guitars with a bossa
-nova feel. Two vocals join in soon. One of them is harmonizing in a soothing way.
-Together, the song is uplifting and
-makes me feel at ease.
+nova feel, and is very chill and uplifting. Two vocals join in soon after with one harmonizing over the other in a
+soothing way.
 
 The singing is heartfelt when he is trying to reconcile with his friend. He seems to be happy when
 recalling how he felt his friend could reach any goal he wanted. He honestly was happy for them, because he felt his
@@ -102,8 +101,9 @@ friend was doing well.
 There is slight frustration in the voice when he is ‘complaining’ that his friend should have
 vocalized if he needed a hand.
 
-But the singing and instruments at the end seem to make it light-hearted. The problems
-could be fixed easily.
+However, the song doesn't seem to stress me out despite that. The conflict being explained in a light-hearted, gentle
+manner,
+puts me at ease.
 
 Conclusion
 ----------
@@ -112,4 +112,6 @@ My main takeaway from this song is that communication solves many relationship p
 
 This song makes me happy and
 lifts some burdens from my life. It makes me feel like some problems with people are rather simple, and we can just
-humble ourselves and take the first step to solve the problem.
+humble ourselves and take the first step to solve the problem. I am sure with honesty and gentleness and humility, many
+of these
+problems can be handled well.
