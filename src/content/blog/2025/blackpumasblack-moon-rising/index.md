@@ -12,9 +12,8 @@ emotions: [
 
 ## Song overview
 
-This song has a dream-like quality to it.
-
-It seems to be about a fictional, tumultuous relationship between two people that never ends.
+This song has a dream-like quality to it. It seems to be about a fictional, tumultuous relationship between two people
+that never ends.
 
 The singer desires for the woman and goes about self-destructive behaviors just to please her. It always ends with the
 woman’s rejection, and the man tries to win her back again, and the cycle continues.
