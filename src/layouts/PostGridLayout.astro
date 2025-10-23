@@ -22,7 +22,7 @@ const {posts, title} = Astro.props;
             </div>)}
     <ul class={`list-none py-3 px-4 ${posts.length < POSTS_PER_PAGE ? 'max-w-[65ch] mx-auto' : 'sm:grid sm:grid-cols-3'} sm:gap-3`}>
         {posts.map((post: Post) => (
-                <li class="py-3 md:col-span-1 ">
+                <li class="py-3 flex flex-col  md:col-span-1 ">
                     <a href={`/blog/${post.id}/`}>
                         {post.data.heroImage && (
 
@@ -38,12 +38,12 @@ const {posts, title} = Astro.props;
                         )}
                     </a>
 
-                    <div class="py-3 px-1">
+                    <div class="py-3 px-1 h-full">
 
 
-                        <article>
+                        <article class="h-full flex flex-col ">
                             <h2 class="text-xl font-semibold">{post.data.title}</h2>
-                            <p class="font-medium ">
+                            <div class="font-medium ">
                                 <FormattedDate date={post.data.pubDate}/>
                                 {
                                     post.data.updatedDate && (
@@ -52,11 +52,13 @@ const {posts, title} = Astro.props;
                                                 </div>
                                     )
                                 }
-                            </p>
+                            </div>
                             <div class="py-3">
                                 <PostExcerpt post={post} smartEllipsis={true} maxLength={200}/>
                             </div>
-                            <Button href={`/blog/${post.id}/`} text="Read More"></Button>
+                            <div class="mt-auto">
+                                <Button href={`/blog/${post.id}/`} text="Read More"></Button>
+                            </div>
                         </article>
 
                     </div>
