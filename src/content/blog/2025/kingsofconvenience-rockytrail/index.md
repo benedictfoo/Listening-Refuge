@@ -2,6 +2,7 @@
 title: "Kings of Convenience—Rocky Trail"
 description: "Kings of Convenience—Rocky Trail | Be vocal about how you feel"
 pubDate: 'Jun 27 2025'
+updatedDate: 'Oct 23 2025'
 heroImage: './kingsofconvenience-rockytrail.jpg'
 youtubeId: 'zUhQ1W1YYJI'
 emotions: [
@@ -12,29 +13,103 @@ emotions: [
 ]
 ---
 
-## Kings of Convenience—Rocky Trail
+Song overview
+-------------
 
-The song opens with vibrant violin melodies, supported by soft guitar strumming, creating a
-chill atmosphere that's perfect for unwinding on a weekend. The theme centers on the importance of expressing
-one's troubles and the feelings that arise from them.
+This song is about the singer and his relationship with a friend whom he considers to be exceptional and highly capable.
+The singer had been unaware that his friend was having some difficulties, which led their relationship to sour a little.
+This song highlights the importance of communication in relationships.
 
-He reaches out to a friend he had a falling out with, to try and reconcile. He explains that he assumed
-his friend was strong
-enough to handle whatever challenges he faced: *"Almost anything you can imagine, almost any goal, you will get there"*.
-The way he sings it and the words chosen make me feel at ease: as if he was talking to a friend.
+Even though their relationship has turned for the
+worse, the singer looks at the whole situation in a positive light, and the music definitely follows the same vibe, with
+its chill, happy instrumentation.
 
-He reflects: *"Maybe you could have told me there was a world on your shoulders that needed lifting. Maybe I could have
-helped you with that"*. He was willing to help, but he simply didn't know his friend needed support.
-*"How am I to know about your problems and your load?
-I am blind to what you show, I am waiting to be told.
-I never ask"*
+Lyrics I love
+-------------
 
-It feels like both sides could have communicated better. His friend could have been more vocal about his struggles,
-while
-the
-singer could have reached out more or asked what went wrong when their relationship began to drift. Who knows what
-reasons held them back? Are those reasons really more important than the friendship itself? Something that might matter
-more in the long run? Why let misunderstandings linger for weeks, months, or even years before trying to reconnect?
+> One more time
+>
+> Let's say you give me one more time
+>
+> One last chance to speak again
+>
+> Let's start from what we left unsaid
+>
+> And here we go
 
-This is what I felt about the song. Great message, and it is a really comfy song. I enjoyed it a lot, and hope you would
-too. 
+The singer seemingly had some fallout with someone — a friend, lover, or family member. Let’s just call them a friend.
+He wants to speak with them to make things right. Some words were meant to be said, but he hasn’t done it yet.
+
+> Brave enough to go climbing a wall
+>
+> So high that no sunlight is seen through winter
+>
+> Brave enough to go traveling around the world
+>
+> Without money to eat or sleep for
+
+I like the repetition of the word “brave” twice. It emphasizes the tenacity his friend has ito reach their goals.
+
+> Seeing what you can do with your hands and feet
+>
+> I feel there is no question about it
+>
+> Almost anything you can imagine
+>
+> Almost any goal, you will get there
+
+His friend is capable, and the singer does not doubt that his friend will succeed in what they do. I can feel the
+admiration he has for his friend. Even with the state of their relationship, he has to say what is good about his
+friend.
+
+> Maybe you could have told me
+>
+> Thеre was a world on your shoulders that needed lifting
+>
+> Maybe I could have helped you with that
+>
+
+His friend was having some trouble he didn’t know of. Could the misunderstandings have started from here? Perhaps his
+friend thought the singer didn’t care for them. But in fact, the singer didn’t mean to do that.
+
+> How am I to know about your problems and your load?
+>
+> I am blind to what you show
+>
+> I am waiting to be told
+>
+> I never ask
+
+Sometimes, I can’t see the situation clearly, even when it is right in front of me. The singer explains that he didn’t
+notice that his friend needed help.
+
+I feel like both sides could have done better. But I think the singer is more
+responsible for what has happened. I find that the singer could have said more and asked more when his friend was
+feeling unhappy, instead of avoiding conflict.
+
+What I love about the music
+---------------------------
+
+I like that the intro of the song starts without vocals. It begins with violins, percussion, and guitars with a bossa
+nova feel. Two vocals join in soon. One of them is harmonizing in a soothing way.
+Together, the song is uplifting and
+makes me feel at ease.
+
+The singing is heartfelt when he is trying to reconcile with his friend. He seems to be happy when
+recalling how he felt his friend could reach any goal he wanted. He honestly was happy for them, because he felt his
+friend was doing well.
+
+There is slight frustration in the voice when he is ‘complaining’ that his friend should have
+vocalized if he needed a hand.
+
+But the singing and instruments at the end seem to make it light-hearted. The problems
+could be fixed easily.
+
+Conclusion
+----------
+
+My main takeaway from this song is that communication solves many relationship problems.
+
+This song makes me happy and
+lifts some burdens from my life. It makes me feel like some problems with people are rather simple, and we can just
+humble ourselves and take the first step to solve the problem.
