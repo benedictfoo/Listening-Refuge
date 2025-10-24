@@ -2,7 +2,7 @@
 title: "Siobhan Miller—Queen of Argyll"
 description: "Siobhan Miller—Queen of Argyll | A song about Passion and Love"
 pubDate: 'Jun 13 2025'
-heroImage: './siobhan-miller-queenofargyll.jpg'
+heroImage: './siobhan-miller-queen-of-argyll.png'
 youtubeId: '7j8YZF0xZ3A'
 emotions: [
   "admiration",
